@@ -145,7 +145,22 @@
       border-bottom: 1px solid $gris-empresas;
     }
     nav {
-      flex-basis: 60%;
+      flex-basis: 100%;
+      @include media(md) {
+        flex-basis: 60%;
+      }
+      @include media(lg) {
+        flex-basis: 70%;
+      }
+    }
+    form {
+      flex-basis: 100%;
+      @include media(md) {
+        flex-basis: 40%;
+      }
+      @include media(lg) {
+        flex-basis: 30%;
+      }
     }
     .menu {
       @include media(sm) {
