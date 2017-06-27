@@ -5,12 +5,14 @@
     padding: 0.5rem;
   }
 
-  &__logo {
-
-  }
-
   &__acciones {
     flex-basis: 35%;
+    @include media(sm) {
+      flex-basis: 50%;
+    }
+    @include media(md) {
+      flex-basis: 40%;
+    }
   }
 
   &__idiomas {
@@ -35,7 +37,7 @@
 
   &__login {
     background-color: $amarillo-universidad;
-    margin: 0.5rem auto;
+    margin: 0.5rem 0;
     padding: 0.25rem 1rem;
     a {
       color: #fff;
@@ -116,18 +118,25 @@
         background-color: #fff;
         border: 1px solid #fff;
         color: $azul-camersur;
+        transition: all 0.5s ease;
+        &:hover {
+          background-color: transparent;
+          color: #fff;          
+          text-decoration: none;
+        }
       }
 
       &--planes {
         background-color: transparent;
         border: 1px solid #fff;
+        transition: all 0.5s ease;
         &:hover {
-          color: #fff;
-          text-decoration: underline;
+          background-color: #fff;
+          color: $azul-camersur;
+          text-decoration: none;
         }
       }
     }
-
   }
 
   //  Seccion menu de navegacion

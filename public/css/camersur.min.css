@@ -68,6 +68,18 @@ img {
   flex-basis: 35%;
 }
 
+@media (min-width: 768px) {
+  .header__acciones {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__acciones {
+    flex-basis: 40%;
+  }
+}
+
 .header__idiomas > * {
   font-weight: 600;
   margin: 0.5rem 0.25rem;
@@ -87,7 +99,7 @@ img {
 
 .header__login {
   background-color: #ffbf00;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
   padding: 0.25rem 1rem;
 }
 
@@ -178,16 +190,25 @@ img {
   background-color: #fff;
   border: 1px solid #fff;
   color: #1572a2;
+  transition: all 0.5s ease;
+}
+
+.header__afiliacion__btn--afiliate:hover {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
 }
 
 .header__afiliacion__btn--planes {
   background-color: transparent;
   border: 1px solid #fff;
+  transition: all 0.5s ease;
 }
 
 .header__afiliacion__btn--planes:hover {
-  color: #fff;
-  text-decoration: underline;
+  background-color: #fff;
+  color: #1572a2;
+  text-decoration: none;
 }
 
 .header__menu .container {
@@ -277,7 +298,6 @@ img {
 @media (min-width: 768px) {
   .redes__item {
     margin: 0 0.5em;
-    width: 33.33%;
   }
 }
 
@@ -467,72 +487,6 @@ img {
   text-transform: uppercase;
 }
 
-.cms-boton {
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.875em;
-  font-weight: 600;
-  margin: 1em auto;
-  margin-top: auto;
-  padding: 1em 3em;
-  text-transform: uppercase;
-}
-
-.cms-boton a {
-  color: #fff;
-  position: relative;
-  transition: all 0.5s ease;
-}
-
-.cms-boton a:before {
-  content: '';
-  border-left: 6px solid #fff;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 105%;
-  margin-top: 0.2em;
-}
-
-.cms-boton a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.cms-boton--boton1 {
-  background: #ffbf00;
-  transition: all 0.5s ease;
-}
-
-.cms-boton--boton1:hover {
-  background: #ffcc33;
-  cursor: pointer;
-}
-
-.cms-boton--boton2 {
-  background: #1572a2;
-  transition: all 0.5s ease;
-}
-
-.cms-boton--boton2:hover {
-  background: #1882b9;
-  cursor: pointer;
-}
-
-.cms-boton--boton3 {
-  background: #80B100;
-  margin-top: auto;
-  transition: all 0.5s ease;
-}
-
-.cms-boton--boton3:hover {
-  background: #92cb00;
-  cursor: pointer;
-}
-
 .cmsuniversidad-publicidad {
   margin: 1em auto;
 }
@@ -602,6 +556,72 @@ img {
   text-transform: uppercase;
 }
 
+.cms-boton {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+  margin: 1em auto;
+  margin-top: auto;
+  padding: 1em 3em;
+  text-transform: uppercase;
+}
+
+.cms-boton a {
+  color: #fff;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.cms-boton a:before {
+  content: '';
+  border-left: 6px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 105%;
+  margin-top: 0.2em;
+}
+
+.cms-boton a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cms-boton--boton1 {
+  background: #ffbf00;
+  transition: all 0.5s ease;
+}
+
+.cms-boton--boton1:hover {
+  background: #ffcc33;
+  cursor: pointer;
+}
+
+.cms-boton--boton2 {
+  background: #1572a2;
+  transition: all 0.5s ease;
+}
+
+.cms-boton--boton2:hover {
+  background: #1882b9;
+  cursor: pointer;
+}
+
+.cms-boton--boton3 {
+  background: #80B100;
+  margin-top: auto;
+  transition: all 0.5s ease;
+}
+
+.cms-boton--boton3:hover {
+  background: #92cb00;
+  cursor: pointer;
+}
+
 .camersur__item {
   display: flex;
   flex-direction: column;
@@ -628,30 +648,79 @@ img {
 }
 
 .camersur__boton {
-  padding: 0.75rem 2rem;
-  display: block;
-  width: 100%;
+  /*padding: 0.75rem 2rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: auto auto 0;
+    position: relative;*/
+  margin: auto auto 0;
   text-align: center;
+  width: 100%;
+}
+
+.camersur__boton a {
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
-  margin: auto auto 0;
+  display: block;
+  margin: auto;
+  padding: 0.75rem 2rem;
   position: relative;
+  width: 70%;
+  transition: all 0.5s ease;
+}
+
+.camersur__boton a:before {
+  content: '';
+  border-left: 6px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 70%;
+  margin-top: 0.2em;
 }
 
 .camersur__boton--news {
+  border-top: 4px solid #008ec9;
+}
+
+.camersur__boton--news a {
   background-color: #008ec9;
-  border-bottom: 2px solid #008ec9;
+}
+
+.camersur__boton--news a:hover {
+  background-color: #006a96;
+  text-decoration: none;
 }
 
 .camersur__boton--universidad {
+  border-top: 4px solid #ffbf00;
+}
+
+.camersur__boton--universidad a {
   background-color: #ffbf00;
-  border-bottom: 2px solid #ffbf00;
+}
+
+.camersur__boton--universidad a:hover {
+  background-color: #cc9900;
+  text-decoration: none;
 }
 
 .camersur__boton--eventos {
+  border-top: 4px solid #80B100;
+}
+
+.camersur__boton--eventos a {
   background-color: #80B100;
-  border-bottom: 2px solid #80B100;
+}
+
+.camersur__boton--eventos a:hover {
+  background-color: #5b7e00;
+  text-decoration: none;
 }
 
 .acerca {

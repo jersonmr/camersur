@@ -15,10 +15,9 @@
     height: 460px;
     width: 100%;
     margin-bottom: 1em;
-    overflow: hidden;
+    overflow: hidden;    
     @include media(sm) {
-      margin: 0 0.5em;
-      width: 33.33%;
+      margin: 0 0.5em;      
     }
   }
 }
