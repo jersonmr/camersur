@@ -1,0 +1,6 @@
+$browser-context: 16; // Tamaño de fuente por defecto del navegador
+
+// Convierte pixeles a em
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}

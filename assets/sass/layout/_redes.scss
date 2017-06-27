@@ -1,0 +1,24 @@
+// Sociales
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+  padding: 0 15px;
+  @include media(sm) {
+    flex-direction: row;
+  }
+  &__item {
+    border: 1px solid rgba(#000, 0.4);
+    box-shadow: 0 0 0.5em rgba(#000, 0.6);
+    height: 460px;
+    width: 100%;
+    margin-bottom: 1em;
+    overflow: hidden;
+    @include media(sm) {
+      margin: 0 0.5em;
+      width: 33.33%;
+    }
+  }
+}

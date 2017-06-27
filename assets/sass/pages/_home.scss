@@ -1,0 +1,193 @@
+.camersur {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem auto;
+    @include media(md) {
+      margin: 0;
+      width: calc(32.33% - 0.5rem);
+    }
+  }
+
+  &__logo {
+    height: 30%;
+  }
+
+  &__descripcion {
+    color: $azul-camersur;
+    font-family: $josefin-font;
+    font-size: 1.3rem;
+    margin: 1rem auto;
+  }
+
+  &__boton {
+    padding: 0.75rem 2rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: $josefin-font;
+    font-weight: 600;
+    margin: auto auto 0;
+    position: relative;
+
+    &--news {
+      background-color: $azul-news;
+      border-bottom: 2px solid $azul-news;
+    }
+    &--universidad {
+      background-color: $amarillo-universidad;
+      border-bottom: 2px solid $amarillo-universidad;
+    }
+    &--eventos {
+      background-color: $verde-eventos;
+      border-bottom: 2px solid $verde-eventos;
+    }
+  }
+}
+
+// Seccion "APRENDE"
+.acerca {
+  background-color: $azul-aprende;
+
+  &__boton {
+    background-color: $azul-news;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $montserrat-font;
+    font-size: em(14);
+    font-weight: 600;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    i {
+      margin-right: 0.5rem;
+    }
+    &:hover {
+      color: lightskyblue;
+      text-decoration: none;
+    }
+  }
+}
+
+// Seccion promocionales
+.promocionales {
+  text-align: center;
+  &__descripcion {
+    color: $texto-descripcion;
+    font-family: $montserrat-font;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 1rem auto;
+    text-align: left;
+  }
+
+  &__boton {
+    margin: 1rem auto;
+  }
+}
+
+.empresas {
+  &__descripcion {
+    color: $texto-descripcion;
+    font-family: $montserrat-font;
+    font-size: 1rem;
+    line-height: 1.3;
+    //margin: 1rem auto;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__grid {
+    margin: 1rem auto;
+  }
+
+  &__item {
+    background-color: $gris-empresas;
+    display: flex;
+    //flex-basis: calc(98% - 1rem);
+    width: calc(99% - 1rem);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    &:last-child {
+      background-color: $azul-news;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      i {
+        color: #fff;
+        font-size: 5rem;
+      }
+      span {
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    @include media(sm) {
+      //flex-basis: calc(48% - 0.5rem);
+      width: calc(49% - 0.5rem);
+    }
+
+    @include media(md) {
+      //flex-basis: calc(18% - 0.5rem);
+      width: calc(19% - 0.5rem);
+    }
+
+    img {
+      width: 80%;
+    }
+
+    a {
+      color: $azul-camersur;
+      margin-top: 1rem;
+      font-family: $montserrat-font;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Seccion proveedores
+.proveedores {
+  &__conecta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $josefin-font;
+    text-transform: uppercase;
+    h1 {
+      color: $texto-titulo;
+      font-size: em(22);
+      font-weight: 600;
+      @include media(sm) {
+        font-size: em(33);
+      }
+    }
+    p {
+      color: $texto-descripcion;
+      line-height: 1.2;
+      font-weight: 600;
+      font-size: em(18);
+      width: 100%;
+      @include media(md) {
+        width: 65%;
+      }
+    }
+  }
+
+  &__anunciantes {
+    img {
+      margin: 1rem auto;
+    }
+  }
+}

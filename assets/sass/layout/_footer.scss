@@ -1,0 +1,103 @@
+.footer {
+  background: $azul-claro;
+  border-top: 6px solid $amarillo-universidad;
+  color: #fff;
+  font-family: $montserrat-font;
+  font-size: em(14);
+  margin-top: 2em;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: -6px;
+    border-top: 6px solid $azul-oscuro;
+  }
+  &__logo {
+    margin-bottom: 1rem;
+    @include media(md) {
+      flex-basis: 25%;
+    }
+    p {
+      color: $texto-copyright;
+      line-height: 1.3;
+      font-size: 0.9em;
+      text-align: justify;
+      @include media(md) {
+        text-align: left;
+      }
+    }
+  }
+  &__acerca, &__categorias, &__contacto {
+    flex-basis: 100%;
+    @include media(sm) {
+      border-right: 1px solid $azul-ligero;
+      flex-basis: calc(33.33% - 0.5rem);
+    }
+    @include media(md) {
+      margin-top: 1.5rem;
+      flex-basis: 25%;
+      padding: 0 1rem;
+    }
+  }
+  &__contacto {
+    border: none;
+  }
+
+  &__titulo {
+    color: #fff;
+    font-family: $montserrat-font;
+    font-size: em(16);
+    font-weight: 600;
+    margin: 1em auto;
+    @include media(sm) {
+      font-weight: bold;
+    }
+  }
+
+  &__menu {
+    &__item {
+      display: block;
+      margin: 0.5em auto;
+      @include media(md) {
+        //text-align: left;
+      }
+    }
+    &__link {
+      color: darken(#fff, 10%);
+      font-size: 0.9em;
+      &:hover {
+        color: $amarillo-universidad;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+  // Informacion de contacto
+  &__contacto {
+    color: darken(#fff, 10%);
+    font-family: $montserrat-font;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+  // Copyright
+  &__copyright {
+    flex-basis: 100%;
+    color: $texto-copyright;
+    font-family: $montserrat-font;
+    font-size: 0.9em;
+    line-height: 1.3;
+    margin-top: 1em;
+    @include media(sm) {
+      text-align: center;
+    }
+  }
+}
