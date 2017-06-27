@@ -87,7 +87,12 @@
 
         <!-- Boton de busqueda -->
         <form action="#" class="header__menu__frm-busqueda">
-          <input type="search" name="buscar" id="buscar" placeholder="BÚSQUEDA">
+          <div class="inputAddOn">
+            <input type="text" name="buscar" id="buscar" placeholder="BÚSQUEDA" class="inputAddOn-field">
+            <button class="inputAddOn-item">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
         </form>
       </div>
     </section>
@@ -131,12 +136,16 @@
   </section>
 
   <!-- Leads de oportunidades -->
-  <!--<section class="oportunidades">
-    <h1 class="d-block">ESPACIO PARA LOS LEADS DE OPORTUNIDADES</h1>
-    <div class="container d-flex justify-content-between">
+  <section class="oportunidades mt-5">
+    <h1 class="oportunidades__titulo">OPORTUNIDADES DE NEGOCIO</h1>
+    <div class="container d-md-flex justify-content-between">
       <article class="oportunidades__item">
         <img src="http://lorempixel.com/300/150/business/1" alt="" class="oportunidades__img img-fluid">
-        <a href="#" class="oportunidades__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
+        <a href="#" class="oportunidades__descripcion">
+          Lorem ipsum dolor sit amet, consectetur adipisicing.
+          Lorem ipsum dolor sit amet.
+          Lorem ipsum dolor sit amet.
+        </a>
       </article>
       <article class="oportunidades__item">
         <img src="http://lorempixel.com/300/150/business/2" alt="" class="oportunidades__img img-fluid">
@@ -151,10 +160,10 @@
         <a href="#" class="oportunidades__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
       </article>
     </div>
-  </section>-->
+  </section>
 
   <!-- Acerca de Camersur -->
-  <section class="acerca my-5">
+  <section class="acerca mb-5">
     <div class="container py-4">
       <h1 class="cms-titulo cms-titulo--aprende">APRENDE ACERCA DE CAMERSUR</h1>
       <h2 class="cms-subtitulo">Descarga nuestros manuales y tutoriales</h2>

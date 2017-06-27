@@ -181,16 +181,25 @@
       }
     }
     // Caja de busqueda
-    form {
-      flex-basis: 20%;
-      input[type="search"] {
+    .inputAddOn {
+      border: 1px solid $azul-camersur;
+      display: flex;
+      .inputAddOn-field {
+        border: none;
+        outline: none;
+        flex: 1;
         display: block;
         width: 100%;
-        padding: 0.3rem 0.5rem;
-        border: 1px solid $azul-camersur;
-        color: darken($azul-camersur, 30%);
+        padding: 0.5rem 0.7rem;
+        color: $azul-camersur;
         font-family: $montserrat-font;
         font-size: 0.9rem;
+      }
+      .inputAddOn-item {
+        background: transparent;
+        border: none;
+        color: $azul-camersur;
+        cursor: pointer;
       }
     }
   }

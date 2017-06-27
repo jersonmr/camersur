@@ -42,18 +42,6 @@
       position: relative;
       width: 70%;
       transition: all 0.5s ease;
-      &:before {
-        content: '';
-        border-left: 6px solid #fff;
-        border-top: 6px solid transparent;
-        border-bottom: 6px solid transparent;
-        display: inline-block;
-        position: absolute;
-        top: 30%;
-        right: 0;
-        left: 70%;
-        margin-top: 0.2em;
-      }
     }
 
     &--news {
@@ -87,6 +75,48 @@
       }
     }
 
+  }
+}
+
+// Seccion "OPORTUNIDADES"
+.oportunidades {
+  background: $gris-empresas;
+  border-top: 6px solid yellow;
+  flex-wrap: wrap;
+  &__titulo {
+    flex: 1 1 100%;
+    background: $azul-news;
+    padding: 10px;
+    color: #FFF;
+    font-family: $josefin-font;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    margin: 1rem auto;
+    //width: 100%;
+    flex: 1 1 100%;
+    @include media(sm) {
+      margin: 1rem;
+      //width: 50%;
+      flex: 1 1 calc(50% - 0.5rem);
+    }
+    @include media(md) {
+      width: calc(25% - 0.5rem);
+    }
+  }
+  &__img {
+    border-radius: 5px;
+  }
+  &__descripcion {
+    color: $azul-camersur;
+    font-family: $montserrat-font;
+    font-size: 0.8rem;
+    margin-top: 0.2em;
+    text-align: center;
+    @include media(lg) {
+      font-size: 1rem;
+    }
   }
 }
 
