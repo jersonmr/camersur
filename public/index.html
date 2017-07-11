@@ -1,214 +1,133 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"></html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="Jerson Moreno">
-  <title>Camersur</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="author" content="Jerson Moreno | Cesticom"/>
+  <title>CAMERSUR</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/camersur.min.css"/>
+  <!-- Fuentes web-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600"/>
 </head>
 <body>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/camersur.min.css">
-
-  <!-- Fuentes Web-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
-
-  <!-- Seccion Encabezado -->
   <header class="header">
     <section class="header__top">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div class="header__logo">
-          <img src="images/Logo-CAMERSUR.svg" width="312" alt="Camersur Logo">
-        </div>
+        <div class="header__logo"><img src="images/Logo-CAMERSUR.svg" width="312" alt="Camersur Logo"/></div>
         <div class="header__acciones d-flex flex-column flex-md-row justify-content-between align-items-center">
-
-          <!-- Desplegable de idiomas -->
-          <div class="header__idiomas dropdown d-flex align-items-center">
-            <img src="images/bandera-espana.png" alt="Español">
-            <span>es</span>
-          </div>
-
-          <!-- Boton de registro -->
-          <div class="header__registrarse">
-            <a href="registro.html">REGISTRARSE</a>
-          </div>
-
-          <!-- Boton inicio de sesion -->
-          <div class="header__login d-flex align-items-center">
-            <a href="ingreso.html">Iniciar Sesión</a>
-            <img src="images/icono-usuario.png" alt="iniciar sesión">
-          </div>
-
+          <!-- Desplegable de idiomas-->
+          <div class="header__idiomas dropdown d-flex align-items-center"><img src="images/bandera-espana.png" alt="Español"/><span>es</span></div>
+          <!-- Boton de registro-->
+          <div class="header__registrarse"><a href="registro.html">REGISTRARSE</a></div>
+          <!-- Boton inicio de sesion-->
+          <div class="header__login d-flex align-items-center"><a href="ingreso.html">Iniciar Sesión</a><img src="images/icono-usuario.png" alt="iniciar sesión"/></div>
         </div>
       </div>
     </section>
-
-    <!-- Menu de navegacion -->
-    <section class="header__menu">
-      <div class="container d-sm-flex justify-content-between align-items-center my-3 pb-3 flex-wrap">
-        <nav>
-          <ul class="menu">
-            <li class="menu__item nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-            <li class="menu__item nav-item"><a href="#" class="nav-link">Planes</a></li>
-            <li class="menu__item nav-item"><a href="#" class="nav-link">Noticias</a></li>
-            <li class="menu__item nav-item"><a href="#" class="nav-link">Universidad</a></li>
-            <li class="menu__item nav-item"><a href="#" class="nav-link">Eventos</a></li>
-          </ul>
-        </nav>
-
-        <!-- Boton de busqueda -->
-        <form action="#" class="header__menu__frm-busqueda">
-          <div class="inputAddOn">
-            <input type="text" name="buscar" id="buscar" placeholder="BÚSQUEDA" class="inputAddOn-field">
-            <button class="inputAddOn-item">
-              <i class="fa fa-search"></i>
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Banner publicitario de afiliacion -->
-    <section class="header__afiliacion pt-5">
-      <div class="container d-flex justify-content-between align-items-end h-100">
-        <img src="./images/imagen-empresario-slider.png" alt="" class="header__afiliacion__img img-fluid">
-        <!-- Textos de afiliacion -->
-        <div class="header__afiliacion__textos">
-          <h2 class="header__afiliacion__titulo">
-            Camara de comercio <span>en línea</span>
-          </h2>
-          <h2 class="header__afiliacion__slogan">
-            A pocos pasos
-          </h2>
-          <p class="header__afiliacion__descripcion">
-            Crea relaciones empresariales bajo la tutela de CAMERSUR
-          </p>
-
-          <!-- Botones de afiliacion -->
-          <div class="header__afiliacion__botones">
-            <a href="#" class="header__afiliacion__btn header__afiliacion__btn--afiliate">Afiliate</a>
-            <a href="#" class="header__afiliacion__btn header__afiliacion__btn--planes">Ver planes</a>            
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Menu de navegacion-->
   </header>
-
-  <!-- Seccion mis empresas de camersur -->
+  <section class="header__menu">
+    <div class="container d-sm-flex justify-content-between align-items-center my-3 pb-3 flex-wrap">
+      <nav>
+        <ul class="menu">
+          <li class="menu__item nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+          <li class="menu__item nav-item"><a class="nav-link" href="#">Planes</a></li>
+          <li class="menu__item nav-item"><a class="nav-link" href="#">Noticias</a></li>
+          <li class="menu__item nav-item"><a class="nav-link" href="#">Universidad</a></li>
+          <li class="menu__item nav-item"><a class="nav-link" href="#">Eventos</a></li>
+        </ul>
+      </nav>
+      <!-- Boton de busqueda-->
+      <form class="header__menu__frm-busqueda" action="#">
+        <div class="inputAddOn">
+          <input class="inputAddOn-field" id="buscar" type="text" name="buscar" placeholder="BÚSQUEDA"/>
+          <button class="inputAddOn-item"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Banner publicitario-->
+  <!-- Banner publicitario de afiliacion-->
+  <section class="header__afiliacion pt-5">
+    <div class="container d-flex justify-content-between align-items-end h-100"><img class="header__afiliacion__img img-fluid" src="./images/imagen-empresario-slider.png" alt=""/>
+      <!-- Textos de afiliacion-->
+      <div class="header__afiliacion__textos">
+        <h2 class="header__afiliacion__titulo">Camara de comercio <span>en línea</span></h2>
+        <h2 class="header__afiliacion__slogan">A pocos pasos</h2>
+        <p class="header__afiliacion__descripcion">Crea relaciones empresariales bajo la tutela de CAMERSUR</p>
+        <!-- Botones de afiliacion-->
+        <div class="header__afiliacion__botones"><a class="header__afiliacion__btn header__afiliacion__btn--afiliate" href="#">Afiliate</a><a class="header__afiliacion__btn header__afiliacion__btn--planes" href="#">Ver planes</a></div>
+      </div>
+    </div>
+  </section>
+  <!-- Mis empresas Camersur-->
+  <!-- Seccion mis empresas de camersur-->
   <section class="camersur mt-5">
     <div class="container d-md-flex justify-content-center">
-
-      <article class="camersur__item">
-        <img src="images/Logo-CAMERSUR-News.svg" alt="Logo Camersur News" class="camersur__logo">
-        <p class="camersur__descripcion">
-          Lorem ipsum dolor sit amet.
-        </p>
-        <div class="camersur__boton camersur__boton--news">
-          <a href="#">INFÓRMATE</a>
-        </div>
+      <article class="camersur__item"><img class="camersur__logo" src="images/Logo-CAMERSUR-News.svg" alt="Logo Camersur News"/>
+        <p class="camersur__descripcion">Lorem ipsum dolor sit amet.</p>
+        <div class="camersur__boton camersur__boton--news"><a href="#">INFÓRMATE</a></div>
       </article>
-
-      <article class="camersur__item">
-        <img src="images/Logo-Universidad-CAMERSUR.svg" alt="Logo Camersur Universidad" class="camersur__logo">
-        <p class="camersur__descripcion">
-          Lorem ipsum dolor sit amet.
-        </p>
-        <div class="camersur__boton camersur__boton--universidad">
-          <a href="#">FÓRMATE</a>
-        </div>
+      <article class="camersur__item"><img class="camersur__logo" src="images/Logo-Universidad-CAMERSUR.svg" alt="Logo Camersur Universidad"/>
+        <p class="camersur__descripcion">Lorem ipsum dolor sit amet.</p>
+        <div class="camersur__boton camersur__boton--universidad"><a href="#">FÓRMATE</a></div>
       </article>
-
-      <article class="camersur__item">
-        <img src="images/Logo-Eventos-CAMERSUR.svg" alt="Logo Camersur Eventos" class="camersur__logo">
-        <p class="camersur__descripcion">
-          Lorem ipsum dolor sit amet.
-        </p>
-        <div class="camersur__boton camersur__boton--eventos">
-          <a href="#">ANÚNCIATE</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- Leads de oportunidades -->
-  <section class="oportunidades mt-5">
-    <h1 class="oportunidades__titulo">OPORTUNIDADES DE NEGOCIO</h1>
-    <div class="container d-md-flex justify-content-between">
-      <article class="oportunidades__item">
-        <img src="http://lorempixel.com/300/150/business/1" alt="" class="oportunidades__img img-fluid">
-        <a href="#" class="oportunidades__descripcion">
-          Lorem ipsum dolor sit amet, consectetur adipisicing.
-          Lorem ipsum dolor sit amet.
-          Lorem ipsum dolor sit amet.
-        </a>
-      </article>
-      <article class="oportunidades__item">
-        <img src="http://lorempixel.com/300/150/business/2" alt="" class="oportunidades__img img-fluid">
-        <a href="#" class="oportunidades__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
-      </article>
-      <article class="oportunidades__item">
-        <img src="http://lorempixel.com/300/150/business/3" alt="" class="oportunidades__img img-fluid">
-        <a href="#" class="oportunidades__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
-      </article>
-      <article class="oportunidades__item">
-        <img src="http://lorempixel.com/300/150/business/4" alt="" class="oportunidades__img img-fluid">
-        <a href="#" class="oportunidades__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
+      <article class="camersur__item"><img class="camersur__logo" src="images/Logo-Eventos-CAMERSUR.svg" alt="Logo Camersur Eventos"/>
+        <p class="camersur__descripcion">Lorem ipsum dolor sit amet.</p>
+        <div class="camersur__boton camersur__boton--eventos"><a href="#">ANÚNCIATE</a></div>
       </article>
     </div>
   </section>
-
-  <!-- Acerca de Camersur -->
+  <!-- Leads de oportunidades--><section class="oportunidades mt-5">
+<h1 class="oportunidades__titulo">OPORTUNIDADES DE NEGOCIO</h1>
+<div class="container d-md-flex justify-content-between">
+<article class="oportunidades__item">
+<img src="http://lorempixel.com/300/150/business/1" alt="" class="oportunidades__img img-fluid">
+<a href="#" class="oportunidades__descripcion">
+  <Lorem>ipsum dolor sit amet, consectetur adipisicing.</Lorem>
+  <Lorem>ipsum dolor sit amet.</Lorem>
+  <Lorem>ipsum dolor sit amet.</Lorem></a>
+</article>
+<article class="oportunidades__item">
+<img src="http://lorempixel.com/300/150/business/2" alt="" class="oportunidades__img img-fluid">
+<a href="#" class="oportunidades__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
+</article>
+<article class="oportunidades__item">
+<img src="http://lorempixel.com/300/150/business/3" alt="" class="oportunidades__img img-fluid">
+<a href="#" class="oportunidades__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
+</article>
+<article class="oportunidades__item">
+<img src="http://lorempixel.com/300/150/business/4" alt="" class="oportunidades__img img-fluid">
+<a href="#" class="oportunidades__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
+</article>
+</div>
+</section>
+  <!-- Acerca de camersur-->
   <section class="acerca mb-5">
     <div class="container py-4">
       <h1 class="cms-titulo cms-titulo--aprende">APRENDE ACERCA DE CAMERSUR</h1>
       <h2 class="cms-subtitulo">Descarga nuestros manuales y tutoriales</h2>
       <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <a href="#" class="acerca__boton">
-            <i class="fa fa-video-camera"></i>
-            Video Instruccional
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a href="#" class="acerca__boton">
-            <i class="fa fa-cloud-download"></i>
-            Camersur
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a href="#" class="acerca__boton">
-            <i class="fa fa-cloud-download"></i>
-            Afiliación
-          </a>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <a href="#" class="acerca__boton">
-            <i class="fa fa-cloud-download"></i>
-            Rueda de negocios
-          </a>
-        </div>
+        <div class="col-sm-6 col-md-3"><a class="acerca__boton" href="#"><i class="fa fa-video-camera"></i>            Video Instruccional</a></div>
+        <div class="col-sm-6 col-md-3"><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>            Camersur</a></div>
+        <div class="col-sm-6 col-md-3"><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>            Afiliación</a></div>
+        <div class="col-sm-6 col-md-3"><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>            Rueda de negocios</a></div>
       </div>
-
-      <div class="acerca__video my-3 text-center" style="max-width: 100%">
+      <div class="acerca__video my-3 text-center" style="max-width: 100%;">
         <video controls="" width="100%" height="auto">Your browser does not support the video tag.</video>
       </div>
-
     </div>
   </section>
-
-  <!-- Banner publicitario -->
+  <!-- Promocionales-->
+  <!-- Banner publicitario-->
   <section class="banner">
-    <div class="container text-center">
-      <img src="images/BannerTDG.png" alt="Banner TDG">
-    </div>
+    <div class="container text-center"><img src="images/BannerTDG.png" alt="Banner TDG"/></div>
   </section>
-
   <section class="promocionales">
     <div class="container">
       <div class="row">
@@ -219,143 +138,71 @@
             aperiam architecto assumenda, eum inventore ipsam iste natus nemo optio tempore tenetur velit, veniam
             voluptates.
           </p>
-          <div class="cms-boton cms-boton--boton1 promocionales__boton">
-            <a href="#">VER PLANES</a>
-          </div>
+          <div class="cms-boton cms-boton--boton1 promocionales__boton"><a href="#">VER PLANES</a></div>
         </div>
-        
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <img src="images/esmitecp.png" alt="ESMITECP" class="img-fluid">
-        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3"><img class="img-fluid" src="images/esmitecp.png" alt="ESMITECP"/></div>
       </div>
     </div>
   </section>
-
+  <!-- empresas-->
   <section class="empresas">
     <div class="container py-4">
       <h1 class="cms-titulo cms-titulo--empresas">DESCUBRE LAS EMPRESAS CON LAS QUE PODRÁS CONECTAR</h1>
       <p class="empresas__descripcion">Más de 1500 organizaciones y empresas forman parte de camersur, elige una categoría y empieza ya</p>
       <div class="empresas__grid d-flex justify-content-between flex-wrap">
-        <article class="empresas__item">
-          <img src="images/agroindustrias.svg" alt="">
-          <a href="#">agroindustrias</a>
-        </article>
-        <article class="empresas__item">
-          <img src="images/bienesraices.svg" alt="">
-          <a href="#">bienes raices</a>
-        </article>
-        <article class="empresas__item">
-          <img src="images/construccion.svg" alt="">
-          <a href="#">construcción</a>
-        </article>
-        <article class="empresas__item">
-          <img src="images/electronica.svg" alt="">
-          <a href="#">electrónica</a>
-        </article>
-        <article class="empresas__item">
-          <img src="images/petroleo-2.svg" alt="">
-          <a href="#">petroleo</a>
-        </article>
-        <article class="empresas__item">
-          <img src="images/quimicos.svg" alt="">
-          <a href="#">químicos</a>
-        </article>
-        <article class="empresas__item">
-          <img src="images/telecomunicaciones.svg" alt="">
-          <a href="#">telecomunicaciones</a>
-        </article>
-        <article class="empresas__item">
-          <img src="images/transporte.svg" alt="">
-          <a href="#">transporte</a>
-        </article>
-        <article class="empresas__item">
-          <img src="images/turismo.svg" alt="">
-          <a href="#">turismo</a>
-        </article>
-        <article class="empresas__item">
-          <i class="fa fa-plus"></i>
-          <span>1597 empresas</span>
-        </article>
+        <article class="empresas__item"><img src="images/agroindustrias.svg" alt=""/><a href="#">agroindustrias</a></article>
+        <article class="empresas__item"><img src="images/bienesraices.svg" alt=""/><a href="#">bienes raices</a></article>
+        <article class="empresas__item"><img src="images/construccion.svg" alt=""/><a href="#">construcción</a></article>
+        <article class="empresas__item"><img src="images/electronica.svg" alt=""/><a href="#">electrónica</a></article>
+        <article class="empresas__item"><img src="images/petroleo-2.svg" alt=""/><a href="#">petroleo</a></article>
+        <article class="empresas__item"><img src="images/quimicos.svg" alt=""/><a href="#">químicos</a></article>
+        <article class="empresas__item"><img src="images/telecomunicaciones.svg" alt=""/><a href="#">telecomunicaciones</a></article>
+        <article class="empresas__item"><img src="images/transporte.svg" alt=""/><a href="#">transporte</a></article>
+        <article class="empresas__item"><img src="images/turismo.svg" alt=""/><a href="#">turismo</a></article>
+        <article class="empresas__item"><i class="fa fa-plus"></i><span>1597 empresas</span></article>
       </div>
     </div>
   </section>
-
-  <!-- Banner publicitario -->
+  <!-- Conecta con proveedores-->
+  <!-- Banner publicitario-->
   <section class="banner">
-    <div class="container text-center">
-      <img src="images/Banner5.png" alt="Banner TDG">
-    </div>
+    <div class="container text-center"><img src="images/Banner5.png" alt="Banner TDG"/></div>
   </section>
-
   <section class="proveedores my-5">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-8 col-lg-9">
           <article class="proveedores__conecta px-lg-5 mb-5 text-center">
-
-            <h1>
-              conecta más rápido con
-              <br>
-              proveedores y clientes
-            </h1>
-
-            <p class="my-4">
-              nuestro equipo de profesionales estará al tanto de tus dudas en todas las áreas y etapas del negocio que realices en camersur.
-              <br>
-              mediaremos en caso de ser necesario
-            </p>
-
-            <div class="cms-boton cms-boton--boton3 promocionales__boton">
-              <a href="#">inicia sesión</a>
-            </div>
-
+            <h1>conecta más rápido con<br/>proveedores y clientes</h1>
+            <p class="my-4">nuestro equipo de profesionales estará al tanto de tus dudas en todas las áreas y etapas del negocio que realices en camersur.<br/>mediaremos en caso de ser necesario</p>
+            <div class="cms-boton cms-boton--boton3 promocionales__boton"><a href="#">inicia sesión</a></div>
           </article>
-
           <article class="proveedores__conecta px-lg-5 my-5 text-center">
-
             <h1>probado y recomendado</h1>
-
-            <p class="my-4">
-              desde hace más de tres años contamos con reconocidas empresas internacionales que usan camersur para realizar operaciones comerciales exitosas
-            </p>
-
-            <div class="cms-boton cms-boton--boton1 promocionales__boton">
-              <a href="#">regístrate</a>
-            </div>
-
+            <p class="my-4">desde hace más de tres años contamos con reconocidas empresas internacionales que usan camersur para realizar operaciones comerciales exitosas</p>
+            <div class="cms-boton cms-boton--boton1 promocionales__boton"><a href="#">regístrate</a></div>
           </article>
         </div>
-
-        <div class="col-sm-6 col-md-4 col-lg-3 proveedores__anunciantes">
-          <img src="images/Banner1.png" alt="Banner 1">
-          <img src="images/Banner2.png" alt="Banner 2">
-          <img src="images/Banner3.png" alt="Banner 3">
-        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 proveedores__anunciantes"><img src="images/Banner1.png" alt="Banner 1"/><img src="images/Banner2.png" alt="Banner 2"/><img src="images/Banner3.png" alt="Banner 3"/></div>
       </div>
     </div>
   </section>
-
+  <!-- Afiliados-->
   <section class="afiliados">
     <div class="container">
       <div class="row d-flex flex-column flex-md-row justify-content-between align-items-end text-center">
-        <div class="col-md-4">
-          <img src="images/Logo-Esmitecp.jpg" alt="Logo Esmitecp">
-        </div>
-        <div class="col-md-4">
-          <img src="images/Logo-GlobalTDG.jpg" alt="Logo GlobalTDG">
-        </div>
-        <div class="col-md-4">
-          <img src="images/Logo-GPI.jpg" alt="Logo GPI">
-        </div>
+        <div class="col-md-4"><img src="images/Logo-Esmitecp.jpg" alt="Logo Esmitecp"/></div>
+        <div class="col-md-4"><img src="images/Logo-GlobalTDG.jpg" alt="Logo GlobalTDG"/></div>
+        <div class="col-md-4"><img src="images/Logo-GPI.jpg" alt="Logo GPI"/></div>
       </div>
     </div>
   </section>
-
-  <!-- REDES SOCIALES -->
+  <!-- Redes sociales-->
+  <!-- REDES SOCIALES-->
   <section class="redes my-5">
     <div class="container d-md-flex">
       <div class="redes__item redes__item--facebook">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fca.mer.sur.com.ve%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fca.mer.sur.com.ve%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
       </div>
       <div class="redes__item redes__item--twitter"><a class="twitter-timeline" data-height="600" href="https://twitter.com/Camersur">Tweets by Camersur</a>
         <script async="async" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -366,53 +213,31 @@
       </div>
     </div>
   </section>
-
-  <!-- PIE DE PAGINA -->
+  <!-- PIE DE PAGINA-->
   <footer class="footer">
     <div class="container d-sm-flex flex-wrap">
       <!-- Logo Camersur-->
-      <div class="footer__logo">
-        <a href="#">
-          <img src="images/logo-camersur-footer.png" alt="Camersur Logo"/>
-        </a>
-        <p>
-          Primera Cámara de Comercio Online destinada a Latinoamérica, pioneros en la integración de empresarios de distintos sectores de la economía en un solo sitio a pocos clics de distancia.
-        </p>
+      <div class="footer__logo"><a href="#"><img src="images/logo-camersur-footer.png" alt="Camersur Logo"/></a>
+        <p>Primera Cámara de Comercio Online destinada a Latinoamérica, pioneros en la integración de empresarios de distintos sectores de la economía en un solo sitio a pocos clics de distancia.</p>
       </div>
       <!-- Seccion acerca de nosotros-->
       <div class="footer__acerca">
         <h4 class="footer__titulo">Acerca de Camersur</h4>
         <ul class="footer__menu">
-          <li class="footer__menu__item">
-            <a class="footer__menu__link" href="#">Nosotros</a>
-          </li>
-          <li class="footer__menu__item">
-            <a class="footer__menu__link" href="#">Planes</a>
-          </li>
-          <li class="footer__menu__item">
-            <a class="footer__menu__link" href="#">Aviso legal</a>
-          </li>
-          <li class="footer__menu__item">
-            <a class="footer__menu__link" href="#">Términos de uso</a>
-          </li>
-          <li class="footer__menu__item">
-            <a class="footer__menu__link" href="#">Políticas de cookies</a>
-          </li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Nosotros</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Planes</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Aviso legal</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Términos de uso</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Políticas de cookies</a></li>
         </ul>
       </div>
       <!-- Seccion de categorias-->
       <div class="footer__categorias">
         <h4 class="footer__titulo">Áreas de interés</h4>
         <ul class="footer__menu">
-          <li class="footer__menu__item">
-            <a class="footer__menu__link" href="#">Noticias</a>
-          </li>
-          <li class="footer__menu__item">
-            <a class="footer__menu__link" href="#">Universidad</a>
-          </li>
-          <li class="footer__menu__item">
-            <a class="footer__menu__link" href="#">Eventos</a>
-          </li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Noticias</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Universidad</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Eventos</a></li>
         </ul>
       </div>
       <!-- Seccion de contacto-->
@@ -424,13 +249,10 @@
       </div>
       <!-- Seccion de copyright-->
       <div class="footer__copyright">
-        <p class="text-center">Copyright &copy; CAMERSUR, 2016-2017. Todos los derechos reservados</p>
+        <p class="text-center">Copyright © CAMERSUR, 2016-2017. Todos los derechos reservados</p>
       </div>
     </div>
   </footer>
-
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
-
 </body>
-</html>
