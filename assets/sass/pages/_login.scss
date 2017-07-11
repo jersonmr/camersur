@@ -1,0 +1,81 @@
+.acceso {
+  height: 100vh;
+  &--login {
+    background: url("../images/bg-camersur-ingreso.jpg") no-repeat center;
+    background-size: cover;
+  }
+  &--registro {
+    background: url("../images/bg-camersur-registro.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &__contenedor {
+    font-family: $montserrat-font;
+    text-align: center;
+    width: 100%;
+    @include media(md) {
+      width: 50%;
+    }
+    h3 {
+      color: #ced9e2;
+      font-size: em(18);
+      text-transform: uppercase;
+    }
+    h2 {
+      color: #f4f6f9;
+      font-size: em(32);
+      span {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+    p, a {
+      color: #ced9e2;
+      font-size: em(16);
+    }
+  }
+  &__form {
+    width: 80%;
+    margin: auto;
+    @include media(md) {
+      width: 70%;
+    }
+  }
+  &__input {
+    background: #ebf1f5;
+    border: #fff;
+    border-bottom: 4px solid $verde-eventos;
+    color: #61829f;
+    display: block;
+    margin: 1rem auto;
+    padding: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-image: none;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    &--registro {
+      border-bottom: 4px solid $amarillo-universidad;
+    }
+  }
+  &__btn {
+    background-color: $amarillo-universidad;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    width: 100%;
+    position: relative;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: $verde-eventos;
+    }
+    &--registro {
+      background-color: $verde-eventos;
+      &:hover {
+        background-color: $amarillo-universidad;
+      }
+    }
+  }
+}

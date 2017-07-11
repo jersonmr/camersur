@@ -345,7 +345,6 @@ img {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 0.875em;
-  margin-top: 2em;
   padding: 1em;
   position: relative;
   text-align: center;
@@ -759,6 +758,9 @@ img {
 }
 
 .oportunidades__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 1rem auto;
   flex: 1 1 100%;
 }
@@ -942,6 +944,107 @@ img {
 
 .proveedores__anunciantes img {
   margin: 1rem auto;
+}
+
+.acceso {
+  height: 100vh;
+}
+
+.acceso--login {
+  background: url("../images/bg-camersur-ingreso.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.acceso--registro {
+  background: url("../images/bg-camersur-registro.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.acceso__contenedor {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .acceso__contenedor {
+    width: 50%;
+  }
+}
+
+.acceso__contenedor h3 {
+  color: #ced9e2;
+  font-size: 1.125em;
+  text-transform: uppercase;
+}
+
+.acceso__contenedor h2 {
+  color: #f4f6f9;
+  font-size: 2em;
+}
+
+.acceso__contenedor h2 span {
+  display: block;
+  text-transform: uppercase;
+}
+
+.acceso__contenedor p, .acceso__contenedor a {
+  color: #ced9e2;
+  font-size: 1em;
+}
+
+.acceso__form {
+  width: 80%;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .acceso__form {
+    width: 70%;
+  }
+}
+
+.acceso__input {
+  background: #ebf1f5;
+  border: #fff;
+  border-bottom: 4px solid #80B100;
+  color: #61829f;
+  display: block;
+  margin: 1rem auto;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-image: none;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+}
+
+.acceso__input--registro {
+  border-bottom: 4px solid #ffbf00;
+}
+
+.acceso__btn {
+  background-color: #ffbf00;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  width: 100%;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.acceso__btn:hover {
+  background-color: #80B100;
+}
+
+.acceso__btn--registro {
+  background-color: #80B100;
+}
+
+.acceso__btn--registro:hover {
+  background-color: #ffbf00;
 }
 
 /*# sourceMappingURL=camersur.min.css.map */
