@@ -1,0 +1,22 @@
+extends partials/layout
+
+block content
+
+  section.acceso.acceso--login.pt-5
+    .container.d-flex.justify-content-center.align-items-center
+      .acceso__contenedor
+        h3 en la nube
+        h2.mt-3.mb-4
+          | Accede y podrás conectar con 
+          span clientes y proveedores
+        p Entra con tus datos de acceso tradicional
+        .acceso__form.my-3
+          form.mb-3(action='#')
+            .form-group
+              input#email.acceso__input(type='email', name='email', placeholder='Correo electrónico')
+              input#passowrd.acceso__input(type='password', name='password', placeholder='Contraseña')
+            button.acceso__btn(type='submit') INICIAR SESIÓN
+          a(href='#') ¿Olvidaste tu contraseña?
+          .acceso__link-registro.mt-3.d-flex.justify-content-between
+            p ¿Todavía no tienes cuenta?
+            a(href='#') Regístrate aquí

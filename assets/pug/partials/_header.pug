@@ -2,7 +2,8 @@ header.header
   section.header__top
     .container.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center
       .header__logo
-        img(src='images/Logo-CAMERSUR.svg', width='312', alt='Camersur Logo')
+        a(href="index.html")
+          img(src='images/Logo-CAMERSUR.svg', width='312', alt='Camersur Logo')
       .header__acciones.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center
         // Desplegable de idiomas
         .header__idiomas.dropdown.d-flex.align-items-center
@@ -17,23 +18,23 @@ header.header
           img(src='images/icono-usuario.png', alt='iniciar sesión')
 
   // Menu de navegacion
-section.header__menu
-  .container.d-sm-flex.justify-content-between.align-items-center.my-3.pb-3.flex-wrap
-    nav
-      ul.menu
-        li.menu__item.nav-item
-          a.nav-link(href='#') Nosotros
-        li.menu__item.nav-item
-          a.nav-link(href='#') Planes
-        li.menu__item.nav-item
-          a.nav-link(href='#') Noticias
-        li.menu__item.nav-item
-          a.nav-link(href='#') Universidad
-        li.menu__item.nav-item
-          a.nav-link(href='#') Eventos
-    // Boton de busqueda
-    form.header__menu__frm-busqueda(action='#')
-      .inputAddOn
-        input#buscar.inputAddOn-field(type='text', name='buscar', placeholder='BÚSQUEDA')
-        button.inputAddOn-item
-          i.fa.fa-search
+  section.header__menu
+    .container.d-sm-flex.justify-content-between.align-items-center.my-3.pb-3.flex-wrap
+      nav
+        ul.menu
+          li.menu__item.nav-item
+            a.nav-link(href='#') Nosotros
+          li.menu__item.nav-item
+            a.nav-link(href='#') Planes
+          li.menu__item.nav-item
+            a.nav-link(href='#') Noticias
+          li.menu__item.nav-item
+            a.nav-link(href='#') Universidad
+          li.menu__item.nav-item
+            a.nav-link(href='#') Eventos
+      // Boton de busqueda
+      form.header__menu__frm-busqueda(action='#')
+        .inputAddOn
+          input#buscar.inputAddOn-field(type='text', name='buscar', placeholder='BÚSQUEDA')
+          button.inputAddOn-item
+            i.fa.fa-search

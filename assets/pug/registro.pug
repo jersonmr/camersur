@@ -1,0 +1,21 @@
+extends partials/layout
+
+block content
+	
+	section.acceso.acceso--registro.pt-5
+		.container.d-flex.justify-content-center.align-items-center
+			.acceso__contenedor
+				h3 en breves pasos
+				h2.mt-3.mb-4
+					| Regístrate y forma parte de 
+					span camersur
+				.acceso__form.my-3
+					form.mb-3(action='#')
+						input#email.acceso__input.acceso__input--registro(type='email', name='email', placeholder='Correo electrónico')
+						input#empresa.acceso__input.acceso__input--registro(type='text', name='empresa', placeholder='Nombre de la empresa')
+						input#passowrd.acceso__input.acceso__input--registro(type='password', name='password', placeholder='Contraseña')
+						input#passowrd2.acceso__input.acceso__input--registro(type='password', name='password2', placeholder='Confirmación de contraseña')
+						button.acceso__btn.acceso__btn--registro(type='submit') REGISTRARME
+					.acceso__link-registro.mt-3.d-flex.justify-content-between
+						p ¿Ya eres miembro?
+						a(href='#') Entra aquí

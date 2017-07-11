@@ -174,25 +174,25 @@
   }
 
   &__item {
-    background-color: $gris-empresas;
-    display: flex;
-    //flex-basis: calc(98% - 1rem);
+    background-color: $gris-empresas;        
     width: calc(99% - 1rem);
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: 1rem;
+		text-align: center;
     &:last-child {
       background-color: $azul-news;
-      flex-direction: row;
-      flex-wrap: nowrap;
+      /*flex-direction: row;
+      flex-wrap: nowrap;*/
       i {
         color: #fff;
         font-size: 5rem;
       }
       span {
         color: #fff;
+				display: block;
         font-size: 1.25rem;
         font-weight: 600;
         text-align: center;
@@ -201,25 +201,38 @@
     }
 
     @include media(sm) {
-      //flex-basis: calc(48% - 0.5rem);
-      width: calc(49% - 0.5rem);
+      //flex-basis: calc(50% - 0.5rem);
+      width: calc(50% - 0.5rem);
     }
 
     @include media(md) {
-      //flex-basis: calc(18% - 0.5rem);
-      width: calc(19% - 0.5rem);
+      //flex-basis: calc(20% - 0.5rem);
+      width: calc(20% - 0.5rem);
     }
 
     img {
-      width: 80%;
+      width: 50%;
     }
 
     a {
       color: $azul-camersur;
+			display: block;
       margin-top: 1rem;
       font-family: $montserrat-font;
+			font-weight: 600;
       text-align: center;
-      text-transform: uppercase;
+      text-transform: uppercase;	
+			transition: all 0.5s ease;
+			&:hover {
+				color: $verde-eventos;				
+				text-decoration: none;
+			}		
+			@include media(md) {
+				font-size: 0.8rem;				
+			}
+			@include media(lg) {
+				font-size: 0.9rem;
+			}
     }
   }
 }
