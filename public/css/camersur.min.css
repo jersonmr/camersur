@@ -209,6 +209,18 @@ img { max-width: 100%; }
 
 .cms-boton--boton3:hover { background: #92cb00; cursor: pointer; }
 
+.boton { display: block; font-family: "Montserrat", sans-serif; font-size: 1rem; font-weight: bold; margin: 0.5rem; padding: 0.75rem 2rem; text-align: center; text-transform: uppercase; }
+
+@media (min-width: 768px) { .boton { display: inline-block; } }
+
+.boton--blanco { background-color: #fff; border: 1px solid #fff; color: #003353; transition: all 0.5s ease; }
+
+.boton--blanco:hover { background-color: transparent; color: #fff; text-decoration: none; }
+
+.boton--transparente { background-color: transparent; border: 1px solid #fff; color: #fff; transition: all 0.5s ease; }
+
+.boton--transparente:hover { background-color: #fff; color: #1572a2; text-decoration: none; }
+
 .camersur__item { display: flex; flex-direction: column; align-items: center; margin: 1.5rem auto; }
 
 @media (min-width: 992px) { .camersur__item { margin: 0; width: calc(32.33% - 0.5rem); } }
@@ -340,5 +352,28 @@ img { max-width: 100%; }
 .acceso__btn--registro { background-color: #80B100; }
 
 .acceso__btn--registro:hover { background-color: #ffbf00; }
+
+/*
+|--------------------------------------------------------------
+| SECCION CONOCENOS
+|--------------------------------------------------------------
+*/
+.conocenos { background: url("../images/bg-nosotros.jpg") no-repeat top center; background-size: cover; }
+
+.conocenos__titulo { color: #f5f6f8; font-family: "Josefin Sans", sans-serif; font-size: 2.125em; font-weight: bold; text-align: center; }
+
+.conocenos__titulo--conocenos { font-size: 1.625em; }
+
+.conocenos__subtitulo { color: #cbdbda; font-family: "Montserrat", sans-serif; font-size: 1.75em; text-align: center; }
+
+.conocenos__descripcion { color: #cbdbda; font-family: "Montserrat", sans-serif; font-size: 1em; text-align: center; text-transform: uppercase; }
+
+.conocenos video { width: 100%; height: auto; }
+
+@media (min-width: 992px) { .conocenos video { width: 60%; } }
+
+.conocenos__botones { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+@media (min-width: 768px) { .conocenos__botones { flex-direction: row; } }
 
 /*# sourceMappingURL=camersur.min.css.map */

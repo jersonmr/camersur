@@ -1,0 +1,53 @@
+/*
+|--------------------------------------------------------------
+| SECCION CONOCENOS
+|--------------------------------------------------------------
+*/
+.conocenos {
+	background: url("../images/bg-nosotros.jpg") no-repeat top center;
+	background-size: cover;
+
+	&__titulo {
+		color: #f5f6f8;
+		font-family: $josefin-font;
+		font-size: em(34);
+		font-weight: bold;
+		text-align: center;
+		&--conocenos {
+			font-size: em(26);
+		}
+	}
+
+	&__subtitulo {
+		color: #cbdbda;
+		font-family: $montserrat-font;
+		font-size: em(28);
+		text-align: center;
+	}
+
+	&__descripcion {
+		color: #cbdbda;
+		font-family: $montserrat-font;
+		font-size: em(16);
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	video {
+		width: 100%;
+		height: auto;
+		@include media (md) {
+			width: 60%;
+		}
+	}
+
+	&__botones {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		@include media(sm) {
+			flex-direction: row;
+		}
+	}
+}

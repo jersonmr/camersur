@@ -55,3 +55,41 @@
   }
 }
 
+.boton {
+	display: block;
+	font-family: $montserrat-font;
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 0.5rem;
+	padding: 0.75rem 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	@include media(sm) {
+		display: inline-block;
+		//width: 50%;
+	}
+
+	&--blanco {
+		background-color: #fff;
+		border: 1px solid #fff;
+		color: #003353;
+		transition: all 0.5s ease;
+		&:hover {
+			background-color: transparent;
+			color: #fff;          
+			text-decoration: none;
+		}
+	}
+
+	&--transparente {
+		background-color: transparent;
+		border: 1px solid #fff;
+		color: #fff;
+		transition: all 0.5s ease;
+		&:hover {
+			background-color: #fff;
+			color: $azul-camersur;
+			text-decoration: none;
+		}
+	}	
+}
