@@ -19,7 +19,7 @@
   &--aprende {
     border-left: 0.3em solid $amarillo-universidad;
     color: #fff;
-  }
+	}
   &--empresas {
     border-left: 0.3em solid $verde-eventos;
     color: $azul-camersur;
@@ -36,6 +36,9 @@
     border-left: 0.3em solid $verde-eventos;
     color: $texto-titulo;
   }
+}
+.linea {
+	border-bottom: 1px solid $linea-eventos;
 }
 .cms-subtitulo {
   color: $texto-subtitulo;
