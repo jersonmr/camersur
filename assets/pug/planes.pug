@@ -1,0 +1,109 @@
+extends partials/layout
+
+block content
+	section.planes.py-5
+		.container
+			.planes__titulo
+				h1.cms-titulo.cms-titulo--actualidad AFÍLIATE - BENEFICIOS
+				a(href="#")
+					img(src="images/banner-membresia-de-prueba.jpg", alt="Memebresia")
+			
+			.planes__listado
+				article.planes__item.planes__item--diamond
+					.planes__header.planes__header--diamond.py-3
+						i.fa.fa-handshake-o
+						h1 PLAN DIAMOND
+					.planes__opciones
+						ul
+							li
+								|Incluye los servicios correspondientes al Plan Silver.
+							li
+								|Incluye los servicios correspondientes al Plan Gold
+							li
+								|Incluye los servicios correspondientes al plan Platinum
+							li
+								|Entrevista en vídeo publicada en HOME PAGE
+							li
+								|Participación en 5 Ruedas de Negocios (**)
+
+						span.planes__nota **Precios Sujetos a Cambio
+					
+					a(href="#").planes__boton.planes__boton--diamond
+						|SUSCRIBIRME
+
+				article.planes__item.planes__item--gold
+					.planes__header.planes__header--gold.py-3
+						i.fa.fa-line-chart
+						h1 PLAN GOLD
+					.planes__opciones
+						ul
+							li
+								|Evaluación y Asesoría en Proyectos de Inversión.
+							li
+								|Información de Bienes a Exportar por Países
+							li
+								|Marketing para Promoción de Bienes
+							li
+								|Desarrollo de la Página Corporativa
+							li
+								|Perfiles Logísticos de Exportación por País
+							li
+								|Incluye los servicios correspondientes al Plan Silver.
+
+						span.planes__nota **Precios Sujetos a Cambio
+					
+					a(href="#").planes__boton.planes__boton--gold
+						|SUSCRIBIRME
+
+				article.planes__item.planes__item--platinum
+					.planes__header.planes__header--platinum.py-3
+						i.fa.fa-industry
+						h1 PLAN PLATINUM
+					.planes__opciones
+						ul
+							li
+								|Incluye los servicios correspondientes al Plan Silver.
+							li
+								|Incluye los servicios correspondientes al Plan Gold
+							li
+								|Evaluación de Business Plan
+							li
+								|Logo publicado en el cintillo Premium de Home Page
+							li
+								|Boletín Informativo Semanal (digital)
+							li
+								|Participación en 3 Ruedas de Negocios anual (**)
+
+						span.planes__nota **Precios Sujetos a Cambio
+					
+					a(href="#").planes__boton.planes__boton--platinum
+						|SUSCRIBIRME
+
+				article.planes__item.planes__item--silver
+					.planes__header.planes__header--silver.py-3
+						i.fa.fa-users
+						h1 PLAN SILVER
+					.planes__opciones
+						ul
+							li
+								|Biblioteca Virtual de Información
+							li
+								|Asesoría de cómo exportar su producto o servicio
+							li
+								|Diseño de Imagen Corporativa
+							li
+								|Descuentos en Capacitación y Eventos Internacionales
+							li
+								|Directorio de Afiliados
+							li
+								|Participación en 1 Rueda de Negocios Anual (**)
+
+						span.planes__nota **Precios Sujetos a Cambio
+					
+					a(href="#").planes__boton.planes__boton--silver
+						|SUSCRIBIRME
+
+	// Seccion de probado y recomendado
+	include partials/nosotros/_probado
+	
+			

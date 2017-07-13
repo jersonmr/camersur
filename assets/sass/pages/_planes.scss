@@ -1,0 +1,143 @@
+.planes {
+	&__titulo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include media(md) {
+			flex-direction: row;
+			justify-content: space-between;
+			.cms-titulo {
+				font-size: 2rem;
+				margin-left: 0;
+			}
+			img {
+				margin-bottom: -1.5rem;
+			}
+		}
+		@include media(lg) {
+			.cms-titulo {
+				font-size: em(36);
+			}
+		}
+	}
+
+	&__listado {
+		margin: 1rem auto;
+		@include media(sm) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;		
+		margin-bottom: 1rem;
+		@include media(sm) {
+			width: calc(50% - 0.5rem);
+		}
+		@include media(md) {
+			width: calc(25% - 0.5rem);
+		}
+
+		&--diamond {
+			border: 2px solid #B9F2FF;
+		}
+		&--gold {
+			border: 2px solid #FFD700;
+		}
+		&--platinum {
+			border: 2px solid #E5E4E2;
+		}
+		&--silver {
+			border: 2px solid #C0C0C0;
+		}
+	}
+
+	&__header {
+		font-family: $josefin-font;
+		font-size: em(32);
+		font-weight: 600;
+		margin-bottom: 1rem;
+		text-align: center;
+		padding: 0.5rem 0;
+		@include media(md) {
+			font-size: em(24);
+		}
+
+		&--diamond {
+			background-color: #B9F2FF;
+			color: darken(#B9F2FF, 45%);
+		}
+		&--gold {
+			background-color: #FFD700;
+			color: darken(#FFD700, 45%);
+		}
+		&--platinum {
+			background-color: #E5E4E2;
+			color: darken(#E5E4E2, 45%);
+		}
+		&--silver {
+			background-color: #C0C0C0;
+			color: darken(#C0C0C0, 45%);
+		}
+		
+		.fa {
+			font-size: em(32);
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__opciones {
+		color: #7195ab;
+		font-family: $montserrat-font;	
+		padding: 1rem;
+		
+		li {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__boton {
+		background-color: $verde-eventos;
+		color: #fff;
+		font-family: $montserrat-font;
+		margin-top: auto;
+		padding: 1rem 3rem;
+		text-align: center;	
+		transition: all 0.5s ease;	
+
+		&--diamond {
+			&:hover {				
+				background-color: #B9F2FF;
+				text-decoration: none;
+			}
+		}
+		&--gold {
+			&:hover {				
+				background-color: #FFD700;
+				text-decoration: none;
+			}
+		}
+		&--platinum {
+			&:hover {				
+				background-color: #E5E4E2;
+				text-decoration: none;
+			}
+		}
+		&--silver {
+			&:hover {				
+				background-color: #C0C0C0;
+				text-decoration: none;
+			}
+		}
+
+		&::after {
+			content: "\f0da";
+			font-family: FontAwesome;
+			font-size: 1rem;
+			margin-left: 0.3rem;			
+		}
+	}
+}

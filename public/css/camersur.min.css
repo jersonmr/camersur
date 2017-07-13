@@ -421,4 +421,60 @@ img { max-width: 100%; }
 
 @media (min-width: 768px) { .probado__afiliados article { margin: 0 0.5rem; } }
 
+.planes__titulo { display: flex; flex-direction: column; align-items: center; }
+
+@media (min-width: 992px) { .planes__titulo { flex-direction: row; justify-content: space-between; }
+  .planes__titulo .cms-titulo { font-size: 2rem; margin-left: 0; }
+  .planes__titulo img { margin-bottom: -1.5rem; } }
+
+@media (min-width: 1200px) { .planes__titulo .cms-titulo { font-size: 2.25em; } }
+
+.planes__listado { margin: 1rem auto; }
+
+@media (min-width: 768px) { .planes__listado { display: flex; flex-wrap: wrap; justify-content: space-between; } }
+
+.planes__item { display: flex; flex-direction: column; margin-bottom: 1rem; }
+
+@media (min-width: 768px) { .planes__item { width: calc(50% - 0.5rem); } }
+
+@media (min-width: 992px) { .planes__item { width: calc(25% - 0.5rem); } }
+
+.planes__item--diamond { border: 2px solid #B9F2FF; }
+
+.planes__item--gold { border: 2px solid #FFD700; }
+
+.planes__item--platinum { border: 2px solid #E5E4E2; }
+
+.planes__item--silver { border: 2px solid #C0C0C0; }
+
+.planes__header { font-family: "Josefin Sans", sans-serif; font-size: 2em; font-weight: 600; margin-bottom: 1rem; text-align: center; padding: 0.5rem 0; }
+
+@media (min-width: 992px) { .planes__header { font-size: 1.5em; } }
+
+.planes__header--diamond { background-color: #B9F2FF; color: #00abd3; }
+
+.planes__header--gold { background-color: #FFD700; color: #1a1600; }
+
+.planes__header--platinum { background-color: #E5E4E2; color: #77736b; }
+
+.planes__header--silver { background-color: #C0C0C0; color: #4d4d4d; }
+
+.planes__header .fa { font-size: 2em; margin-bottom: 1rem; }
+
+.planes__opciones { color: #7195ab; font-family: "Montserrat", sans-serif; padding: 1rem; }
+
+.planes__opciones li { margin-bottom: 1rem; }
+
+.planes__boton { background-color: #80B100; color: #fff; font-family: "Montserrat", sans-serif; margin-top: auto; padding: 1rem 3rem; text-align: center; transition: all 0.5s ease; }
+
+.planes__boton--diamond:hover { background-color: #B9F2FF; text-decoration: none; }
+
+.planes__boton--gold:hover { background-color: #FFD700; text-decoration: none; }
+
+.planes__boton--platinum:hover { background-color: #E5E4E2; text-decoration: none; }
+
+.planes__boton--silver:hover { background-color: #C0C0C0; text-decoration: none; }
+
+.planes__boton::after { content: "\f0da"; font-family: FontAwesome; font-size: 1rem; margin-left: 0.3rem; }
+
 /*# sourceMappingURL=camersur.min.css.map */
