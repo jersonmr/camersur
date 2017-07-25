@@ -57,6 +57,9 @@
 		&--plan {
 			width: 100%;
 			@include media(sm) {
+				width: 60%;
+			}
+			@include media(md) {
 				width: 50%;
 			}
 			@include media(lg) {
@@ -111,7 +114,9 @@
 
 	&__boton {
 		background-color: $verde-eventos;
+		border: 0;
 		color: #fff;
+		cursor: pointer;
 		font-family: $montserrat-font;
 		margin-top: auto;
 		padding: 1rem 3rem;
@@ -154,16 +159,21 @@
 	// Estilos para el detalle del plan
 	&__precios {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		justify-content: space-between;		
 		padding: 0.5rem;
 		@include media(sm) {
+			flex-direction: row;
 			padding: 1rem;
 		}
-		.precio, .duracion {
+		.tipo {
+			margin-bottom: 1rem;			
+		}
+		.precio, .duracion, .btn-precio {
 			color: $azul-camersur;
 			display: block;
 			font-family: $montserrat-font;
-			font-weight: 600;
+			font-weight: 600;			
 			text-align: center;
 		}
 		.precio {
@@ -171,6 +181,22 @@
 		}
 		.duracion {
 			font-size: em(13);
+		}
+		// Boton
+		.btn-precio {
+			background-color: $azul-news;
+			border-radius: 8px;
+			color: #fff;
+			display: block;
+			font-size: em(12);
+			margin: 1rem 0.3rem 0;
+			padding: 1rem 0.5rem;
+			transition: all 0.5s ease;
+
+			&:hover {
+				background-color: $azul-camersur;
+				text-decoration: none;
+			}
 		}
 	}
 

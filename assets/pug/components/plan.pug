@@ -8,12 +8,18 @@ mixin plan(color, icono, titulo)
 			.tipo
 				span.precio $40
 				span.duracion MENSUAL
+				a(href="#", title="title").btn-precio 
+					|ACTÍVALO AHORA
 			.tipo
 				span.precio $135
 				span.duracion SEMESTRAL
+				a(href="#", title="title").btn-precio 
+					|ACTÍVALO AHORA
 			.tipo
 				span.precio $250
 				span.duracion ANUAL
+				a(href="#", title="title").btn-precio 
+					|ACTÍVALO AHORA
 		
 		h2.planes__accede Accede y podrás conectar con clientes y proveedores
 
@@ -25,8 +31,8 @@ mixin plan(color, icono, titulo)
 			input(type="email", placeholder="Correo electrónico", class="form-control")
 			input(type="password", placeholder="Contraseña", class="form-control")
 		
-		a(href="#", class="planes__boton planes__boton--" + color)
-			|INICIAR SESIÓN
+			button(type="submit", class="btn-block planes__boton planes__boton--" + color)
+				|INICIAR SESIÓN
 
 		.planes__opciones-acceso
 			a(href="#", title="title") ¿Olvidaste tu contraseña?
