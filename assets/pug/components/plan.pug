@@ -1,0 +1,35 @@
+mixin plan(color, icono, titulo)
+	article(class="planes__item planes__item--" + color + " planes__item--plan")
+		div(class="py-3 planes__header planes__header--" + color)
+			i(class=icono)
+			h1 PLAN #{titulo}
+
+		.planes__precios
+			.tipo
+				span.precio $40
+				span.duracion MENSUAL
+			.tipo
+				span.precio $135
+				span.duracion SEMESTRAL
+			.tipo
+				span.precio $250
+				span.duracion ANUAL
+		
+		h2.planes__accede Accede y podrás conectar con clientes y proveedores
+
+		a(href="#", class="planes__boton-correo my-3") ENTRAR CON CORREO ELECTRÓNICO
+
+		h2.planes__accede.planes__accede--tradicional Entra con tus datos de acceso tradicional
+
+		form.planes__form
+			input(type="email", placeholder="Correo electrónico", class="form-control")
+			input(type="password", placeholder="Contraseña", class="form-control")
+		
+		a(href="#", class="planes__boton planes__boton--" + color)
+			|INICIAR SESIÓN
+
+		.planes__opciones-acceso
+			a(href="#", title="title") ¿Olvidaste tu contraseña?
+			div(class="d-flex justify-content-between")
+				a(href="#", title="title") ¿Todavía no tienes cuenta? 
+				a(href="#", title="title") Regístrate aquí

@@ -53,6 +53,16 @@
 		&--silver {
 			border: 2px solid #C0C0C0;
 		}
+		// Detalle del plan
+		&--plan {
+			width: 100%;
+			@include media(sm) {
+				width: 50%;
+			}
+			@include media(lg) {
+				width: 40%;
+			}
+		}
 	}
 
 	&__header {
@@ -138,6 +148,88 @@
 			font-family: FontAwesome;
 			font-size: 1rem;
 			margin-left: 0.3rem;			
+		}
+	}
+
+	// Estilos para el detalle del plan
+	&__precios {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem;
+		@include media(sm) {
+			padding: 1rem;
+		}
+		.precio, .duracion {
+			color: $azul-camersur;
+			display: block;
+			font-family: $montserrat-font;
+			font-weight: 600;
+			text-align: center;
+		}
+		.precio {
+			font-size: em(36);
+		}
+		.duracion {
+			font-size: em(13);
+		}
+	}
+
+	&__accede {
+		color: #7195ab;
+		font-family: $montserrat-font;
+		font-size: em(22);
+		font-weight: 300;
+		line-height: 1.3;
+		padding: 0.5rem;
+		text-align: center;
+		&--tradicional {
+			font-size: em(16);
+		}
+	}
+
+	&__boton-correo {
+		background: transparent;
+		border: 1px solid $azul-camersur;
+		color: $azul-camersur;
+		font-family: $montserrat-font;
+		padding: 1rem;
+		text-align: center;
+		width: 80%;
+		margin: auto;
+		transition: all 0.5s ease;
+		&:after {
+			content: "\f0da";
+			font-family: FontAwesome;
+			margin-left: 0.4rem;
+		}
+		&:hover {
+			background-color: $verde-eventos;
+			border: 1px solid darken($verde-eventos, 15%);
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	&__form {
+		padding: 1rem;
+		width: 100%;
+
+		.form-control {
+			color: $azul-camersur;
+			font-family: $montserrat-font;
+			font-size: em(16);
+			margin: 0.5rem auto;
+		}
+	}
+
+	&__opciones-acceso {
+		a {
+			color: $azul-camersur;
+			display: block;
+			margin: 0.5rem auto;
+			font-family: $montserrat-font;
+			font-size: em(14);			
+			text-align: center;
 		}
 	}
 }

@@ -387,7 +387,7 @@ img { max-width: 100%; }
 
 .mision__objetivos ul li { margin-bottom: 1rem; }
 
-.mision__objetivos ul li::before { content: "\00BB"; color: #ffbf00; font-size: 1.3rem; height: 100%; margin-right: 0.5rem; }
+.mision__objetivos ul li::before { content: "\f0da"; color: #ffbf00; font-family: FontAwesome; font-size: 1.3rem; height: 100%; margin-right: 0.5rem; }
 
 .mision__objetivos ul li::last-child { margin-bottom: 0; }
 
@@ -398,11 +398,11 @@ img { max-width: 100%; }
 */
 .nuestros-servicios { background-color: #1572a2; color: #c6d5da; font-family: "Montserrat", sans-serif; font-size: 1em; line-height: 1.5; }
 
-.nuestros-servicios ul li::before { content: "\00BB"; color: #fff; font-size: 1.3rem; height: 100%; margin-right: 0.5rem; }
+.nuestros-servicios ul li::before { content: "\f0da"; color: #fff; font-family: FontAwesome; font-size: 1.3rem; height: 100%; margin-right: 0.5rem; }
 
 /*
 |--------------------------------------------------------------
-| SECCION PROBADOY RECOMENDADO
+| SECCION PROBADO Y RECOMENDADO
 |--------------------------------------------------------------
 */
 .probado__titulo { color: #1572a2; font-family: "Josefin Sans", sans-serif; font-size: 2.25em; font-weight: 600; text-align: center; text-transform: uppercase; }
@@ -476,5 +476,45 @@ img { max-width: 100%; }
 .planes__boton--silver:hover { background-color: #C0C0C0; text-decoration: none; }
 
 .planes__boton::after { content: "\f0da"; font-family: FontAwesome; font-size: 1rem; margin-left: 0.3rem; }
+
+.resultados__cantidad { color: #a7a7a7; font-family: "Montserrat", sans-serif; font-size: 0.75rem; margin-bottom: 0.25rem; flex-basis: 100%; order: -1; }
+
+.resultados__item { display: flex; flex-direction: column; align-items: center; margin-bottom: 0.5rem; }
+
+@media (min-width: 768px) { .resultados__item { flex-direction: row; } }
+
+.resultados__item div.resultados__texto:nth-child(odd) { background-color: #f9f9f9; }
+
+.resultados__item div.resultados__texto:nth-child(even) { background-color: #f3f3f3; }
+
+.resultados__texto { display: flex; flex-direction: column; justify-content: center; font-family: "Montserrat", sans-serif; padding: 1rem; }
+
+@media (min-width: 768px) { .resultados__texto { width: 70%; } }
+
+@media (min-width: 992px) { .resultados__texto { width: 80%; } }
+
+.resultados__texto a { color: #1572a2; text-decoration: none; transition: all 0.5s ease; }
+
+.resultados__texto a:hover { color: #0c425e; }
+
+.resultados__accion { padding: 1rem 1.5rem; text-align: center; }
+
+.resultados__boton { font-family: "Montserrat", sans-serif; font-size: 0.8125em; color: #fff; background-color: #008ec9; display: block; padding: 1rem 3rem; transition: all 0.5s ease; }
+
+.resultados__boton:hover { background-color: #80B100; color: #fff; text-decoration: none; }
+
+.resultados__boton::after { content: "\f0da"; font-family: FontAwesome; }
+
+@media (min-width: 768px) { .resultados__boton { padding: 1rem 2rem; } }
+
+@media (min-width: 992px) { .resultados__boton { padding: 1rem 1.5rem; } }
+
+@media (min-width: 1200px) { .resultados__boton { padding: 1rem 3rem; } }
+
+.resultados__titulo { font-size: 1.2rem; margin-bottom: 0.5rem; }
+
+.resultados__descripcion { color: #747474; }
+
+.resultados .cmsuniversidad-boton.cmsuniversidad-boton--boton1 { margin-top: 0; }
 
 /*# sourceMappingURL=camersur.min.css.map */

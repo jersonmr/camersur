@@ -1,0 +1,10 @@
+extends partials/layout
+include components/plan.pug
+
+block content
+	section.detalle-plan.py-5
+		.container
+			.detalle-plan__titulo
+				h1.cms-titulo.cms-titulo--actualidad AFÍLIATE - BENEFICIOS
+			.detalle-plan__info.d-flex.justify-content-center
+				+plan('diamond', 'fa fa-handshake-o', 'DIAMOND')

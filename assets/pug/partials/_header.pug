@@ -6,35 +6,43 @@ header.header
           img(src='images/Logo-CAMERSUR.svg', width='312', alt='Camersur Logo')
       .header__acciones.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center
         // Desplegable de idiomas
+        // Select de idiomas
         .header__idiomas.dropdown.d-flex.align-items-center
-          img(src='images/bandera-espana.png', alt='Español')
-          span es
+          button.btn.btn-secondary.dropdown-toggle.d-flex.align-items-center(type="button", id="dropdownLanguage", data-toggle="dropdown", aria-haspopup="true")
+            img.mr-2(src="images/bandera-espana.png", alt="Español")
+            span es
+
+          // Listado de idiomas
+          .dropdown-menu(aria-labelledby="dropdownLanguage")
+            a.dropdown-item.d-flex.align-items-center(href="#")
+              img.mr-1(src="images/bandera-espana.png", alt="") 
+              span Inglés
+
         // Boton de registro
         .header__registrarse
           a(href='registro.html') REGISTRARSE
+
+        // ESTA OPCION DEBE OCULTARSE CUANDO SE INICIA SESIÓN
         // Boton inicio de sesion
-        .header__login.d-flex.align-items-center
+        //-.header__login.d-flex.align-items-center
           a(href='ingreso.html') Iniciar Sesión
-          img(src='images/icono-usuario.png', alt='iniciar sesión')
+          img(src='images/icono-usuario.png', alt='iniciar sesión')          
+
+        // ESTA OPCION SOLO DEBE MOSTRARSE CUANDO SE ESTA LOGUEADO
+        .header__perfil
+          a.enlace-perfil(data-toggle="collapse", data-target="#dropdownProfile", aria-expanded="false", style="cursor: pointer;")
+            i.fa.fa-user-circle-o            
+          
+        // Opciones del usuario logueado
+        .collapse#dropdownProfile
+          a.nav-item(href="#") Directorio      
+          a.nav-item(href="#") Ruedas de Negocios      
+          a.nav-item(href="#") Biblioteca virtual de Información      
+          a.nav-item(href="#") Admin      
+          a.nav-item(href="#") Salir
 
   // Menu de navegacion
   section.header__menu
-    .container.d-sm-flex.justify-content-between.align-items-center.my-3.pb-3.flex-wrap
-      nav
-        ul.menu
-          li.menu__item.nav-item
-            a.nav-link(href='nosotros.html') Nosotros
-          li.menu__item.nav-item
-            a.nav-link(href='planes.html') Planes
-          li.menu__item.nav-item
-            a.nav-link(href='#') Noticias
-          li.menu__item.nav-item
-            a.nav-link(href='#') Universidad
-          li.menu__item.nav-item
-            a.nav-link(href='#') Eventos
-      // Boton de busqueda
-      form.header__menu__frm-busqueda(action='#')
-        .inputAddOn
-          input#buscar.inputAddOn-field(type='text', name='buscar', placeholder='BÚSQUEDA')
-          button.inputAddOn-item
-            i.fa.fa-search
+    .container.d-flex.justify-content-between.align-items-center.pb-3.flex-wrap
+      include _navbar
+      
