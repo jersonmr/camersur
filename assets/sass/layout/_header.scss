@@ -3,7 +3,17 @@
     color: $azul-camersur;
     font-family: $josefin-font;
     padding: 0.5rem;
-  }
+	}
+	
+	&__logo {
+		width: 100%;
+		@include media(sm) {
+			width: 50%;
+		}
+		@include media(md) {
+			width: 65%;
+		}
+	}
 
   &__acciones {		
     position: relative;
@@ -11,9 +21,9 @@
     @include media(sm) {
       flex-basis: 50%;
     }
-    @include media(md) {
+    @include media(lg) {
       flex-basis: 35%;
-    }
+    }    
   }
 
   &__idiomas {
@@ -22,13 +32,14 @@
       margin: 0.5rem 0.25rem;
     }
     a {
-      color: $azul-camersur;      
+      color: $azul-camersur;            
     }
 		// Estilos para el dropdown de idiomas
 		.btn-secondary {
 			background: transparent;
 			border: none;
       color: $azul-camersur;
+      cursor: pointer;
       span {
         font-size: 1.1rem;
       }
@@ -68,6 +79,7 @@
 		align-items: center;			
 		position: relative;
 		.enlace-perfil {
+      color: $azul-camersur;
 			font-weight: bold;
 			font-size: 1rem;
 			margin-right: 0.4rem;		
@@ -76,23 +88,13 @@
 				font-size: 2rem;
 				margin-right: 0.4rem;
 			}	
-			&:after {
-				content: "\f0d7";
-				font-family: FontAwesome;
-				margin-left: 0.4rem;
-			}
-			&:hover {
+			&:hover, &:focus {
+        color: darken($azul-camersur, 15%);
 				text-decoration: none;
 			}
 		}
 	}
   #dropdownProfile {		
-    background-color: rgba($azul-camersur, 0.85);
-    border-radius: 0 0 8px 8px;
-    margin-top: 7rem;
-    width: 100%;	
-    position: absolute;
-    z-index: 999;			
     .nav-item {
       border-bottom: 1px solid rgba(#000, 0.2);
       display: block;

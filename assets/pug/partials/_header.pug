@@ -1,9 +1,12 @@
 header.header
   section.header__top
     .container.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center
+      // Logo de la empresa
       .header__logo
         a(href="index.html")
           img(src='images/Logo-CAMERSUR.svg', width='312', alt='Camersur Logo')
+      
+      // Idioma | Registro | Login | Usuario registrado
       .header__acciones.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center
         // Desplegable de idiomas
         // Select de idiomas
@@ -18,8 +21,9 @@ header.header
               img.mr-1(src="images/bandera-espana.png", alt="") 
               span Inglés
 
-        // Boton de registro
-        .header__registrarse
+        // ESTA OPCION DEBE OCULTARSE CUANDO SE INICIA SESIÓN
+        // Boton de registro        
+        //-.header__registrarse
           a(href='registro.html') REGISTRARSE
 
         // ESTA OPCION DEBE OCULTARSE CUANDO SE INICIA SESIÓN
@@ -30,16 +34,18 @@ header.header
 
         // ESTA OPCION SOLO DEBE MOSTRARSE CUANDO SE ESTA LOGUEADO
         .header__perfil
-          a.enlace-perfil(data-toggle="collapse", data-target="#dropdownProfile", aria-expanded="false", style="cursor: pointer;")
-            i.fa.fa-user-circle-o            
+          .dropdown.show
+            a(href="#").enlace-perfil.dropdown-toggle(data-toggle="dropdown", id="dropdownProfile", aria-expanded="false", aria-haspopup="true")
+              i.fa.fa-user-circle-o
+              span Maria Alzolar            
           
-        // Opciones del usuario logueado
-        .collapse#dropdownProfile
-          a.nav-item(href="#") Directorio      
-          a.nav-item(href="#") Ruedas de Negocios      
-          a.nav-item(href="#") Biblioteca virtual de Información      
-          a.nav-item(href="#") Admin      
-          a.nav-item(href="#") Salir
+            // Opciones del usuario logueado
+            div(class="dropdown-menu", aria-labelledby="dropdownProfile")
+              a.nav-item.dropdown-item(href="#") Directorio      
+              a.nav-item.dropdown-item(href="#") Ruedas de Negocios      
+              a.nav-item.dropdown-item(href="#") Biblioteca virtual      
+              a.nav-item.dropdown-item(href="#") Admin      
+              a.nav-item.dropdown-item(href="#") Salir
 
   // Menu de navegacion
   section.header__menu

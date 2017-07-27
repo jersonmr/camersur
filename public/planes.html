@@ -18,7 +18,9 @@
   <header class="header">
     <section class="header__top">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <!-- Logo de la empresa-->
         <div class="header__logo"><a href="index.html"><img src="images/Logo-CAMERSUR.svg" width="312" alt="Camersur Logo"/></a></div>
+        <!-- Idioma | Registro | Login | Usuario registrado-->
         <div class="header__acciones d-flex flex-column flex-md-row justify-content-between align-items-center">
           <!-- Desplegable de idiomas-->
           <!-- Select de idiomas-->
@@ -27,14 +29,17 @@
             <!-- Listado de idiomas-->
             <div class="dropdown-menu" aria-labelledby="dropdownLanguage"><a class="dropdown-item d-flex align-items-center" href="#"><img class="mr-1" src="images/bandera-espana.png" alt=""/><span>Inglés</span></a></div>
           </div>
-          <!-- Boton de registro-->
-          <div class="header__registrarse"><a href="registro.html">REGISTRARSE</a></div>
+          <!-- ESTA OPCION DEBE OCULTARSE CUANDO SE INICIA SESIÓN-->
+          <!-- Boton de registro        -->
           <!-- ESTA OPCION DEBE OCULTARSE CUANDO SE INICIA SESIÓN-->
           <!-- Boton inicio de sesion-->
           <!-- ESTA OPCION SOLO DEBE MOSTRARSE CUANDO SE ESTA LOGUEADO-->
-          <div class="header__perfil"><a class="enlace-perfil" data-toggle="collapse" data-target="#dropdownProfile" aria-expanded="false" style="cursor: pointer;"><i class="fa fa-user-circle-o">           </i></a></div>
-          <!-- Opciones del usuario logueado-->
-          <div class="collapse" id="dropdownProfile"><a class="nav-item" href="#">Directorio      </a><a class="nav-item" href="#">Ruedas de Negocios      </a><a class="nav-item" href="#">Biblioteca virtual de Información      </a><a class="nav-item" href="#">Admin      </a><a class="nav-item" href="#">Salir</a></div>
+          <div class="header__perfil">
+            <div class="dropdown show"><a class="enlace-perfil dropdown-toggle" href="#" data-toggle="dropdown" id="dropdownProfile" aria-expanded="false" aria-haspopup="true"><i class="fa fa-user-circle-o"></i><span>Maria Alzolar            </span></a>
+              <!-- Opciones del usuario logueado-->
+              <div class="dropdown-menu" aria-labelledby="dropdownProfile"><a class="nav-item dropdown-item" href="#">Directorio      </a><a class="nav-item dropdown-item" href="#">Ruedas de Negocios      </a><a class="nav-item dropdown-item" href="#">Biblioteca virtual      </a><a class="nav-item dropdown-item" href="#">Admin      </a><a class="nav-item dropdown-item" href="#">Salir</a></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
