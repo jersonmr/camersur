@@ -270,6 +270,15 @@
           }
 				}
       }
+			.active {
+				a {
+					&:before {
+						content: "\f0da";
+						font-family: FontAwesome;															
+						margin-right: 0.4rem;						
+					}
+				}
+			}
 
       a {
         color: $azul-camersur;
