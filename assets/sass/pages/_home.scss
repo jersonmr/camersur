@@ -119,6 +119,13 @@
 .acerca {
   background-color: $azul-aprende;
 
+  &__opciones {
+    @include media(sm) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }  
+
   &__boton {
     background-color: $azul-news;
     color: #fff;
@@ -138,6 +145,26 @@
     &:hover {
       color: lightskyblue;
       text-decoration: none;
+    }
+    @include media(sm) {
+      width: calc(50% - 0.5rem);
+    }
+    @include media(lg) {
+      width: calc(25% - 0.5rem);
+    }
+  }
+
+  &__video {
+    video {
+      @include media(sm) {        
+        width: 100%;      
+      }
+      @include media(md) {        
+        width: 75%;      
+      }
+      @include media(lg) {        
+        width: 50%;      
+      }
     }
   }
 }
@@ -271,3 +298,23 @@
     }
   }
 }
+
+// Estilos para navegacion de los cursos
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  .owl-prev, .owl-next {
+    color: darken($gris-empresas, 15%);
+    font-size: 3rem;
+    margin: 0 0.5rem;
+    transition: all 0.5s ease;
+    &:hover {
+      color: $amarillo-universidad;
+    }
+  }
+}
+/*.owl-stage {
+  display: flex;
+  align-items: baseline;
+}*/

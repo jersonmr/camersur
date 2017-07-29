@@ -3,8 +3,7 @@
   border-top: 6px solid $amarillo-universidad;
   color: #fff;
   font-family: $montserrat-font;
-  font-size: em(14);
-  //margin-top: 2em;
+  font-size: em(14);  
   padding: 1em;
   position: relative;
   text-align: center;
@@ -17,7 +16,7 @@
     border-top: 6px solid $azul-oscuro;
   }
   &__logo {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
     @include media(md) {
       flex-basis: 25%;
     }
@@ -33,14 +32,14 @@
   }
   &__acerca, &__categorias, &__contacto {
     flex-basis: 100%;
-    @include media(sm) {
-      border-right: 1px solid $azul-ligero;
+    @include media(sm) {      
       flex-basis: calc(33.33% - 0.5rem);
+      padding: 0 1rem 0 2rem;
+      text-align: left;
     }
     @include media(md) {
       margin-top: 1.5rem;
-      flex-basis: 25%;
-      padding: 0 1rem;
+      flex-basis: 25%;      
     }
   }
   &__contacto {
@@ -62,9 +61,6 @@
     &__item {
       display: block;
       margin: 0.5em auto;
-      @include media(md) {
-        //text-align: left;
-      }
     }
     &__link {
       color: darken(#fff, 10%);
@@ -84,8 +80,7 @@
     line-height: 1.5;
     margin-bottom: 1rem;
     p {
-      margin: 0;
-      text-align: center;
+      margin: 0;      
     }
   }
   // Copyright
