@@ -141,14 +141,25 @@
 
   //  Seccion afiliacion
   &__afiliacion {
-    background: url("../images/imagen-fondo-slider.jpg") no-repeat;
     background-position: top center;
     background-size: cover;
     height: 470px;
     color: #fff;
     font-family: $josefin-font;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
+    &--personaje1 {      
+      @include personaje(1);
+    }    
+    &--personaje2 {      
+      @include personaje(2);
+    }    
+    &--personaje3 {      
+      @include personaje(3);
+    }    
+    &--personaje4 {      
+      @include personaje(4);
+    }    
+
     &__img {
       @media screen and (max-width: 767px) {
         display: none;

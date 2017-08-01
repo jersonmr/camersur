@@ -30,3 +30,8 @@
   max-width: 100%;
   height: auto;
 }
+
+// Cambio de imagenes de los personajes
+@mixin personaje($num) {
+  background: url("../images/personajes/background-personaje#{$num}.jpg") no-repeat;
+}
