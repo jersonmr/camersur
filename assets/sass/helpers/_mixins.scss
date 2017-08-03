@@ -35,3 +35,20 @@
 @mixin personaje($num) {
   background: url("../images/personajes/background-personaje#{$num}.jpg") no-repeat;
 }
+
+// Botones empresas de camersur
+@mixin mis-empresas($color) {
+  border-top: 4px solid $color;
+  a {
+    background-color: $color;
+    &:hover {
+      background-color: darken($color, 10%);
+      text-decoration: none;
+    }
+    &:after {
+      content: "\f0da";
+      font-family: FontAwesome;
+      margin-left: 0.4rem;
+    }
+  }
+}

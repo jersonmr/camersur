@@ -20,7 +20,7 @@ footer.footer
         li.footer__menu__item
           a.footer__menu__link(href='#') Términos de uso
         li.footer__menu__item
-          a.footer__menu__link(href='#') Políticas de cookies
+          a.footer__menu__link(href='#', data-toggle="modal", data-target="#cookiesModal") Políticas de cookies
     // Seccion de categorias
     .footer__categorias
       h4.footer__titulo Áreas de interés
@@ -43,6 +43,9 @@ footer.footer
     // Seccion de copyright
     .footer__copyright
       p.text-center Copyright © CAMERSUR, 2016-2017. Todos los derechos reservados
+
+    //- Carga de modales en el footer
+    include ./modals/cookies-modal    
       
 script(src='js/jquery.min.js')
 script(src="js/popper.js")

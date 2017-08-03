@@ -123,8 +123,16 @@
       <h1 class="cms-titulo cms-titulo--aprende">APRENDE ACERCA DE CAMERSUR</h1>
       <h2 class="cms-subtitulo">Descarga nuestros manuales y tutoriales</h2>
       <div class="acerca__opciones">     <a class="acerca__boton" href="#"><i class="fa fa-video-camera"></i>Video Instruccional      </a><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>Camersur      </a><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>Afiliación      </a><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>Rueda de negocios</a></div>
-      <div class="acerca__video my-3 text-center" style="max-width: 100%;">
-        <video controls="" width="100%" height="auto">Your browser does not support the video tag.</video>
+      <div class="acerca__video my-5">
+        <div class="acerca__video__item">
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ObW8IHRQOq4" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="acerca__video__item">
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/BxogCjYclrA" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="acerca__video__item">
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/KBW-pquC0vs" frameborder="0" allowfullscreen=""></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -244,7 +252,7 @@
           <li class="footer__menu__item"><a class="footer__menu__link" href="#">Planes</a></li>
           <li class="footer__menu__item"><a class="footer__menu__link" href="#">Aviso legal</a></li>
           <li class="footer__menu__item"><a class="footer__menu__link" href="#">Términos de uso</a></li>
-          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Políticas de cookies</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#" data-toggle="modal" data-target="#cookiesModal">Políticas de cookies</a></li>
         </ul>
       </div>
       <!-- Seccion de categorias-->
@@ -266,6 +274,25 @@
       <!-- Seccion de copyright-->
       <div class="footer__copyright">
         <p class="text-center">Copyright © CAMERSUR, 2016-2017. Todos los derechos reservados</p>
+      </div>
+      <div class="modal fade" id="cookiesModal" tabindex="-1" role="dialog" aria-labelledby="cookiesModalLabel" aria-hidden="true" style="color: #333; line-height: 1.5; text-align: left; font-family: $montserrat-font; font-size: 1rem;">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cookiesModalLabel">Políticas de Cookies</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-center mb-3"><i class="fa fa-info-circle fa-5x text-primary"></i></div>
+              <p class="mb-3">Nuestro sitio web <a href="http://www.camersur.com">www.camersur.com </a>utiliza una tecnología denominada “cookies”, con la finalidad de poder recabar información acerca del uso del sitio web. Asimismo, Camersur envía cookies desde el dominio <a href="http://www.camersurnews.com" target="_blank">www.camersurnews.com.</a></p>
+              <p class="mb-3">Le informamos que vamos a utilizar cookies con la finalidad de facilitar su navegación a través del sitio Web, distinguirle de otros usuarios, proporcionarle una mejor experiencia en el uso del mismo, e identificar problemas para mejorar nuestro Sitio Web. Utilizaremos cookies que nos permitan obtener más información acerca de sus preferencias y personalizar nuestro sitio Web de conformidad con sus intereses individuales, así como mostrarle, en sucesivas visitas a éste u otros sitios web, publicidad relativa a productos y/o servicios.</p>
+              <p>La presente Política de Cookies tiene por finalidad informarle de manera clara y precisa sobre las cookies que se utilizan en el sitio Web. </p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cerrar        </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
