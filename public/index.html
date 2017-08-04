@@ -123,16 +123,8 @@
       <h1 class="cms-titulo cms-titulo--aprende">APRENDE ACERCA DE CAMERSUR</h1>
       <h2 class="cms-subtitulo">Descarga nuestros manuales y tutoriales</h2>
       <div class="acerca__opciones">     <a class="acerca__boton" href="#"><i class="fa fa-video-camera"></i>Video Instruccional      </a><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>Camersur      </a><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>Afiliación      </a><a class="acerca__boton" href="#"><i class="fa fa-cloud-download"></i>Rueda de negocios</a></div>
-      <div class="acerca__video my-5">
-        <div class="acerca__video__item">
-          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ObW8IHRQOq4" frameborder="0" allowfullscreen=""></iframe>
-        </div>
-        <div class="acerca__video__item">
-          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/BxogCjYclrA" frameborder="0" allowfullscreen=""></iframe>
-        </div>
-        <div class="acerca__video__item">
-          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/KBW-pquC0vs" frameborder="0" allowfullscreen=""></iframe>
-        </div>
+      <div class="acerca__video my-5">         
+        <video controls="" width="100%" height="auto">Your browser does not support the video tag.</video>
       </div>
     </div>
   </section>
@@ -145,15 +137,23 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-8 col-lg-9">
-          <video controls="" width="100%" height="auto">Your browser does not support the video tag.</video>
-          <p class="promocionales__descripcion">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad
-            aperiam architecto assumenda, eum inventore ipsam iste natus nemo optio tempore tenetur velit, veniam
-            voluptates.
-          </p>
+          <div class="promocionales__videos">
+            <div class="promocionales__video">
+              <video controls="" width="100%" height="auto">Your browser does not support the video tag.</video>
+            </div>
+            <div class="promocionales__video">
+              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ObW8IHRQOq4" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="promocionales__video">
+              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/BxogCjYclrA" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="promocionales__video">
+              <iframe width="100%" height="auto" src="https://www.youtube.com/embed/KBW-pquC0vs" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
           <div class="cms-boton cms-boton--boton1 promocionales__boton"><a href="#">VER PLANES</a></div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3"><img class="img-fluid" src="images/esmitecp.png" alt="ESMITECP"/></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 py-3"><img class="img-fluid" src="images/esmitecp.png" alt="ESMITECP"/></div>
       </div>
     </div>
   </section>
@@ -236,7 +236,21 @@
     });
   </script>
   <!-- Redes sociales-->
-  <!--include partials/_redes-->
+  <!-- REDES SOCIALES-->
+  <section class="redes my-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <div class="redes__item redes__item--facebook">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fca.mer.sur.com.ve%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+      </div>
+      <div class="redes__item redes__item--twitter"><a class="twitter-timeline" data-height="600" href="https://twitter.com/Camersur">Tweets by Camersur</a>
+        <script async="async" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="redes__item redes__item--instagram">
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+        <script type="IN/CompanyProfile" data-id="10518585" data-format="inline" data-related="false"></script>
+      </div>
+    </div>
+  </section>
   <!-- PIE DE PAGINA-->
   <footer class="footer">
     <div class="container d-sm-flex flex-wrap">
