@@ -32,16 +32,19 @@
       margin: 0.5rem 0.25rem;
     }
     a {
-      color: $azul-camersur;            
+      color: $azul-camersur;
     }
 		// Estilos para el dropdown de idiomas
 		.btn-secondary {
-			background: transparent;
+			background-color: transparent;
 			border: none;
       color: $azul-camersur;
       cursor: pointer;
       span {
         font-size: 1.1rem;
+      }
+      &:focus {
+        background-color: transparent;
       }
 		}		
 	}
@@ -143,10 +146,18 @@
   &__afiliacion {
     background-position: top center;
     background-size: cover;
-    height: 470px;
+    min-height: 470px;
     color: #fff;
     font-family: $josefin-font;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    .container {
+      display: flex;
+      flex-direction: column;
+      @include media(sm) {
+        justify-content: space-between;
+        flex-direction: row;
+      }
+    }
     &--personaje1 {      
       @include personaje(1);
     }    
@@ -171,6 +182,9 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      @include media(md) {
+        flex-basis: 50%;
+      }
     }
     &__titulo, &__slogan {
       font-size: 2rem;
@@ -195,8 +209,21 @@
       text-transform: none;
     }
 
+    &__acciones {
+      a {
+        margin: 0 0.1rem;
+        // Efecto de zoom al hacer hover sobre los iconos de las redes sociales
+        img {
+          transition: all 0.5s;
+        }
+        &:hover img {
+          transform: scale(1.2);
+        }
+      }
+    }
+
     &__botones {
-      margin: auto 0 5rem;
+      margin-top: 5rem;
       @include media(sm) {
         display: flex;
       }
@@ -208,7 +235,7 @@
       font-size: 1rem;
       font-weight: bold;
       margin: 0.5rem;
-      padding: 0.75rem 2rem;
+      padding: 0.75rem 1.5rem;
       text-align: center;
       @include media(sm) {
         display: inline-block;
