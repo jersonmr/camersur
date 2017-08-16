@@ -1,0 +1,49 @@
+extends partials/layout
+
+block content
+
+  section.resultados.my-5
+    .container
+      h1.cms-titulo.cms-titulo--actualidad.d-flex.flex-column TÍTULO DEL LISTADO
+      .resultado__listado
+      
+      -var i = 1;
+      -while (i <= 10)
+        article.resultados__item
+          .resultados__texto
+            h2.resultados__titulo
+              a(href="#")
+                |NOMBRE DE LA EMPRESA NÚMERO #{i}
+            p.resultados__descripcion
+              i(class="fa fa-mobile")
+              span 01 234 5678901
+              br
+              i(class="fa fa-envelope")
+              span correo@empresa.com
+          .resultados__accion
+            a(href="#").resultados__boton VER MÁS
+        -i++
+
+      .resultados__paginacion.d-flex.justify-content-center.my-3
+        nav(aria-label='Paginacion')
+          ul.pagination
+            li.page-item
+              a.page-link(href='#', aria-label='Prev')
+                span(aria-hidden='true') «
+                span.sr-only Prev
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#', aria-label='Next')
+                span(aria-hidden='true') »
+                span.sr-only Next
+      
+  // Afiliados
+  include partials/home/_afiliados
+
+block scripts
+  script(src="js/app.js")

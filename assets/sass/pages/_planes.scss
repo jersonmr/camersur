@@ -117,7 +117,9 @@
 		border: 0;
 		color: #fff;
 		cursor: pointer;
-		font-family: $montserrat-font;
+    font-family: $montserrat-font;
+    font-size: 1.5rem;
+    font-weight: bold;
 		margin-top: auto;
 		padding: 1rem 3rem;
 		text-align: center;	
@@ -157,7 +159,7 @@
 	}
 
 	// Estilos para el detalle del plan
-	&__precios {
+	&__precios, &__acciones {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;		
@@ -165,7 +167,7 @@
 		@include media(sm) {
 			flex-direction: row;
 			padding: 1rem;
-		}
+    }    
 		.tipo {
 			margin-bottom: 1rem;			
 		}
@@ -191,14 +193,19 @@
 			font-size: em(12);
 			margin: 1rem 0.3rem 0;
 			padding: 1rem 0.5rem;
-			transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      text-transform: uppercase;
 
 			&:hover {
 				background-color: $azul-camersur;
 				text-decoration: none;
 			}
 		}
-	}
+  }
+  &__acciones {
+    margin: auto;
+    text-align: center;        
+  }
 
 	&__accede {
 		color: #7195ab;

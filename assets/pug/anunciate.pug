@@ -1,0 +1,42 @@
+extends partials/layout
+
+block content
+  .container
+    h1.cms-titulo.cms-titulo--actualidad ANUNCIA CON NOSOTROS
+
+  section.anunciate.py-5
+    .container
+      .row
+        .col-sm-6
+          h2.anunciate__subtitulo ¿QUIERES ANUNCIAR CON NOSOTROS?
+          h1.anunciate__subtitulo--dudas Envíanos tu solicitud y 
+            span
+            br 
+            |TE CONTACTAREMOS
+          p.anunciate__descripcion
+            |En CAMERSUR ponemos a tu disposición diversas opciones de avisos publicitarios para que elijas la que mejor se adapte a tus requerimientos
+                    
+          .anunciate__redes.mt-5
+            a(href="#")
+              i.fa.fa-facebook-square
+            a(href="")
+              i.fa.fa-instagram
+            a(href="")
+              i.fa.fa-twitter-square
+            a(href="#")
+              i.fa.fa-linkedin-square
+            a(href="#")
+              i.fa.fa-rss-square
+
+        .col-sm-6
+          form(action="", method="post")
+            .form-group
+              input(type="text", name="empresa", placeholder="Empresa").form-control
+            .form-group
+              input(type="text", name="email", placeholder="Correo electrónico").form-control            
+            .form-group
+              input(type="text", name="asunto", placeholder="Asunto").form-control
+            .form-group
+              textarea(name="mensaje", cols="30", rows="10").form-control
+            .form-group
+              button(type="submit").btn-block ENVIAR

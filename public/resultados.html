@@ -8,6 +8,7 @@
   <title>CAMERSUR</title>
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/owl.carousel.min.css"/>
   <link rel="stylesheet" href="css/app.min.css"/>
   <!-- Fuentes web-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
@@ -107,38 +108,9 @@
   <!-- Afiliados-->
   <section class="afiliados pb-5">
     <div class="container">
-      <div class="cards owl-carousel"><a href="#"><img class="owl-img" src="images/Logo-Esmitecp.jpg" alt="Logo Esmitecp"/></a><a href="#"><img class="owl-img" src="images/Logo-GlobalTDG.jpg" alt="Logo GlobalTDG"/></a><a href="#"><img class="owl-img" src="images/Logo-GPI.jpg" alt="Logo GPI"/></a></div>
+      <div class="owl-carousel"><a href="#"><img class="owl-img" src="images/Logo-Esmitecp.jpg" alt="Logo Esmitecp"/></a><a href="#"><img class="owl-img" src="images/Logo-GlobalTDG.jpg" alt="Logo GlobalTDG"/></a><a href="#"><img class="owl-img" src="images/Logo-GPI.jpg" alt="Logo GPI"/></a></div>
     </div>
   </section>
-  <script src="js/owl.carousel.min.js"></script>
-  <script>
-    //- Detectando numero de items dentro del carousel
-    var numItems = $(".owl-carousel").find('.owl-img').length;    
-    
-    //Galería de imágenes con owl-carousel
-    $('.owl-carousel').owlCarousel({            
-      autoplay: true,
-      margin: 0,
-      nav: true,      
-      autoWidth: false,
-      navText: ['<i class="fa fa-chevron-left" title="Anterior"></i>', '<i class="fa  fa-chevron-right" title="Siguiente"></i>'],
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 2,
-          margin: 20,
-          loop: (numItems > 2) ? true: false,
-        },
-        992: {
-          items: 3,
-          margin: 15,
-          loop: (numItems > 3) ? true: false,
-        },        
-      }
-    });
-  </script>
   <!-- PIE DE PAGINA-->
   <footer class="footer">
     <div class="container d-sm-flex flex-wrap">
@@ -202,32 +174,5 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script>
-    //- Detectando numero de items dentro del carousel
-    var numItems = $(".owl-carousel").find('.owl-img').length;    
-    
-    //Galería de imágenes con owl-carousel
-    $('.owl-carousel').owlCarousel({            
-      autoplay: true,
-      margin: 0,
-      nav: true,      
-      autoWidth: false,
-      navText: ['<i class="fa fa-chevron-left" title="Anterior"></i>', '<i class="fa  fa-chevron-right" title="Siguiente"></i>'],
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 2,
-          margin: 20,
-          loop: (numItems > 2) ? true: false,
-        },
-        992: {
-          items: 3,
-          margin: 15,
-          loop: (numItems > 3) ? true: false,
-        },        
-      }
-    });
-  </script>
+  <script src="js/app.js"></script>
 </body>
