@@ -24,3 +24,8 @@ $('.owl-carousel').owlCarousel({
     },
   }
 });
+
+$(document).ready(function()
+{
+   $("#publicityModal").modal("show");
+});

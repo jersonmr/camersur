@@ -1,0 +1,311 @@
+// Variables
+$primary: #023850;
+$secondary: #166d95;
+$text-primary: #000000;
+$text-secondary: #585858;
+
+// Web fonts
+$myriad: 'PT Sans', sans-serif;
+$dincondensed: 'Open Sans Condensed', sans-serif;
+
+.header {
+  background: url("../images/landing/bg-header.jpg") no-repeat top center #166D95;
+  //background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 0.5rem;
+  &__ribbon {
+    background-color: $primary;
+    height: 2rem;
+  }
+  &__logo {
+    img {
+      max-width: 50%;
+    }
+  }
+  &__title {
+    color: $text-primary;
+    font-family: $myriad;
+    font-size: 1.5rem;
+    @media screen and (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+  &__description {
+    border: 1px solid darken(lightgray, 15%);
+    background-color: lightgray;
+    font-family: $myriad;
+    font-size: 1rem;
+    margin: auto;
+    opacity: 0.5;
+    padding: 0.5rem 2rem;
+    p {
+      position: relative;
+      font-weight: bold;
+    }
+  }
+  &__subtitle {
+    color: $text-primary;
+    font-family: $myriad;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  &__condensed {
+    color: $text-secondary;
+    font-family: $dincondensed;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+.wrapper {
+  background-color: $secondary;  
+  position: relative; 
+  width: 100%; 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+}
+.packages {
+  padding-top: 1rem;
+  &__list {
+    background: url("../images/landing/bg-packages.jpg") no-repeat bottom right;
+  }
+  &__title {
+    font-family: $dincondensed;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .card {    
+    background: rgba(255,255,255,1);
+    @media screen and (min-width: 992px) {
+      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+    }
+    font-family: $myriad;
+    margin-bottom: 1rem;
+    text-align: left;
+    z-index: 900;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    ul {
+      padding-left: 1rem;
+    }
+  }
+
+  &__header {
+    border-bottom: 4px solid goldenrod;
+    height: 50px;
+    text-align: center;
+    h4 {
+      font-family: $dincondensed;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    &--gold {      
+      background: rgba(254,183,69,1);      
+      background: linear-gradient(to right, rgba(254,183,69,1) 0%, rgba(241,232,103,1) 51%, rgba(254,183,69,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb745', endColorstr='#feb745', GradientType=1 );    
+    }
+    &--silver {            
+      background: rgba(173,173,173,1);
+      background: linear-gradient(to right, rgba(173,173,173,1) 0%, rgba(254,254,254,1) 52%, rgba(173,173,173,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adadad', endColorstr='#adadad', GradientType=1 );
+    }
+    &--bronze {      
+      background: rgba(158,88,3,1);
+      background: linear-gradient(to right, rgba(158,88,3,1) 0%, rgba(255,174,75,1) 50%, rgba(158,88,3,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e5803', endColorstr='#9e5803', GradientType=1 );
+    }
+  }
+  
+  /*----------  Precio del paquete  ----------*/
+  
+  &__price {
+    background-color: #fff;
+    border: 4px solid;
+    border-radius: 4px;
+    align-self: flex-end;
+    font-family: $dincondensed;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: -1rem;
+    padding: 0 1rem;
+    text-align: right;
+    z-index: 4;
+    &--gold {
+      border-color: darken(#D2B100, 20%);      
+    }
+    &--silver {
+      border-color: darken(#828080, 20%);      
+    }
+    &--bronze {
+      border-color: darken(#c1703a, 20%);      
+    } 
+  }
+
+  &__btn {
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $myriad;
+    font-size: 2rem;
+    z-index: 3;   
+    @media screen and (min-width: 768px) {
+      font-size: 1.5rem;      
+    }
+    @media screen and (min-width: 992px) {
+      font-size: 2rem;      
+    }
+    &--gold {
+      background-color: #D2B100;
+      &:hover {
+        background-color: darken(#D2B100, 15%);
+      }
+    }
+    &--silver {
+      background-color: #828080;
+      &:hover {
+        background-color: darken(#828080, 15%);
+      }
+    }
+    &--bronze {
+      background-color: #c1703a;
+      &:hover {
+        background-color: darken(#c1703a, 15%);
+      }
+    }
+  }
+  
+  /*----------  Icono paypal  ----------*/
+  
+  &__paypal {
+    margin-top: -1rem;
+    z-index: 2;
+    img {
+      position: relative;
+      width: 250px;
+    }
+  }
+}
+
+.live {
+  position:relative; 
+  img {
+    width:320px;
+  }  
+}
+
+
+/*=============================================
+=            Info Section                     =
+=============================================*/
+.info {
+  background-color: $secondary;  
+  font-family: $myriad;
+  font-size: 1.5rem;
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+    > * {
+      margin: 0 1rem;
+    }
+    span i {
+      margin-right: 0.4rem;
+    }
+  }
+  a {
+    color: #fff;
+  }
+}
+
+
+/*=============================================
+=            Section footer                   =
+=============================================*/
+.footer {
+  background-color: $primary;
+  font-family: $myriad;
+  font-weight: bold;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+      align-items: center;
+      //justify-content: space-between;
+      > * {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+}
+
+/*=====  End of Section footer  ======*/
+
+// Boton
+.landing-btn {
+  background: rgba(240,113,225,1);
+  background: linear-gradient(to bottom, rgba(240,113,225,1) 0%, rgba(113,54,106,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f071e1', endColorstr='#71366a', GradientType=0 );
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: $dincondensed;
+  font-size: 2rem;
+  font-weight: bold;    
+}
+
+// Banners Styles
+.banner {
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+// Customizing the default style for card-deck of Bootstrap
+@media (min-width: 576px) {
+  .card-deck {    
+    display: block;    
+    margin-right: -15px;
+    margin-left: -15px;
+    .card {      
+      display: flex;      
+      flex: 1 0 0%;      
+      flex-direction: column;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .card-deck {    
+    display: flex;
+    flex-flow: row wrap;    
+  }
+}
