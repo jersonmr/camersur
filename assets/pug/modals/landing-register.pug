@@ -1,0 +1,21 @@
+#fitceModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="fitceModal")
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title#fitceModal Register Here
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form(action="#")
+          .form-group
+            input(type="text", name="name", placeholder="Name", class="form-control")
+          .form-group
+            input(type="text", name="business", placeholder="Business", class="form-control")
+          .form-group
+            input(type="text", name="mark", placeholder="Mark or Organization", class="form-control")
+          .form-group
+            input(type="email", name="email", placeholder="Email", class="form-control")
+          .form-group
+            button(type="submit", class="btn btn-outline-primary") Register
+      .modal-footer        
+        button.btn.btn-secondary(type='button', data-dismiss='modal') Close

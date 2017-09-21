@@ -12,6 +12,8 @@ html(lang="en")
     //- Web Fonts
     link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,700", rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700", rel="stylesheet")
+    //- Countdown clock
+    link(rel="stylesheet", href="./css/TimeCircles.css")
   body
     header.header
       .header__ribbon
@@ -21,10 +23,15 @@ html(lang="en")
         
         h1.text-center.py-3.header__title
           | October  17 – 18, 2017
-        a(href="https://www.eventbrite.com/e/fitce-florida-international-trade-cultural-expo-2017-tickets-35816633515").btn.btn-primary.btn-lg.landing-btn REGISTER HERE
+        //- Countdown Clock
+        div#clock(data-date="2017-10-17 07:00:00")
+
+        //- Modal      
+        a(data-toggle="modal", data-target="#fitceModal").btn.btn-primary.btn-lg.landing-btn REGISTER HERE        
+        
         .header__description
           p.text-center
-            | Meet Heads of States 
+            span Meet Heads of States 
             br
             | Engage high level government leaders, international trade experts and delegations.
             br
@@ -185,3 +192,16 @@ html(lang="en")
             i.fa.fa-facebook
           a(href="#", target="_blank")
             i.fa.fa-instagram
+
+    //- Modal register
+    include ./modals/landing-register.pug
+
+    script(src="./js/jquery.min.js")    
+    script(src="./js/popper.js")
+    script(src="./js/bootstrap.js")
+    script(src="./js/TimeCircles.js")    
+    //script(src="./js/jquery.countdown.js")
+    script.
+      $(document).ready(function() {   
+        $("div#clock").TimeCircles();        
+      });

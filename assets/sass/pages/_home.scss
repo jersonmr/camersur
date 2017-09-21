@@ -103,7 +103,7 @@
       display: flex;
       flex-wrap: wrap;
     }
-  }  
+  }
 
   &__boton {
     background-color: $azul-news;
@@ -136,14 +136,14 @@
   &__video {
     text-align: center;
     video {
-      @include media(sm) {        
-        width: 100%;      
+      @include media(sm) {
+        width: 100%;
       }
-      @include media(md) {        
-        width: 75%;      
+      @include media(md) {
+        width: 75%;
       }
-      @include media(lg) {        
-        width: 50%;      
+      @include media(lg) {
+        width: 50%;
       }
     }
   }
@@ -152,11 +152,11 @@
 // Seccion promocionales
 .promocionales {
   display: flex;
-  flex-direction: column;    
+  flex-direction: column;
   text-align: center;
   @include media(md) {
-    flex-direction: row;  
-    justify-content: space-between;    
+    flex-direction: row;
+    justify-content: space-between;
   }
   // Contenedor de videos
   &__videos {
@@ -169,13 +169,13 @@
     }
   }
 
-  &__video {    
+  &__video {
     flex-basis: 100%;
     margin: 1rem 0;
     @include media(md) {
       margin: 0 1rem;
-      flex-basis: calc(47% - 0.5rem);      
-    }    
+      flex-basis: calc(46% - 0.5rem);
+    }
   }
 
   &__descripcion {
@@ -197,7 +197,7 @@
     color: $texto-descripcion;
     font-family: $montserrat-font;
     font-size: 1rem;
-    line-height: 1.3;    
+    line-height: 1.3;
     text-align: left;
     text-transform: uppercase;
   }
@@ -207,7 +207,7 @@
   }
 
   &__item {
-    background-color: $gris-empresas;        
+    background-color: $gris-empresas;
     width: calc(99% - 1rem);
     justify-content: center;
     align-items: center;
@@ -254,14 +254,14 @@
       font-family: $montserrat-font;
 			font-weight: 600;
       text-align: center;
-      text-transform: uppercase;	
+      text-transform: uppercase;
 			transition: all 0.5s ease;
 			&:hover {
-				color: $verde-eventos;				
+				color: $verde-eventos;
 				text-decoration: none;
-			}		
+			}
 			@include media(md) {
-				font-size: 0.8rem;				
+				font-size: 0.8rem;
 			}
 			@include media(lg) {
 				font-size: 0.9rem;
