@@ -33,7 +33,8 @@
 
 // Cambio de imagenes de los personajes
 @mixin personaje($num) {
-  background: url("../images/personajes/background-personaje#{$num}.jpg") no-repeat;
+  background: url("../images/personajes/background-personaje#{$num}.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 // Botones empresas de camersur
