@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./css/landing.css"/>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet"/>
-    <link rel="stylesheet" href="./css/TimeCircles.css"/>
   </head>
   <body>
     <header class="header">
@@ -19,7 +18,8 @@
       <div class="container text-center">
         <div class="header__logo text-center pt-5"><img class="img-fluid" src="./images/landing/logo-fitce.png" alt="Fitce Logo"/></div>
         <h1 class="text-center py-3 header__title">October  17 – 18, 2017</h1>
-        <div id="clock" data-date="2017-10-17 07:00:00"></div><a class="btn btn-primary btn-lg landing-btn" data-toggle="modal" data-target="#fitceModal">REGISTER HERE        </a>
+        <iframe width="560" height="340" src="http://cdn.livestream.com/embed/camersurnewstv?layout=4&amp;amp;height=340&amp;amp;width=560&amp;amp;autoplay=false" style="border:0;outline:0;" frameborder="0" scrolling="no"></iframe>
+        <div class="header__actions d-flex justify-content-center"><a class="btn btn-primary btn-lg landing-btn mr-2" href="#" data-toggle="modal" data-target="#fitceModal">REGISTER HERE</a><a class="btn btn-primary btn-lg landing-btn" href="https://www.eventbrite.com/e/fitce-florida-international-trade-cultural-expo-2017-tickets-35816633515" target="_blank">KNOW MORE</a></div>
         <div class="header__description">
           <p class="text-center"><span>Meet Heads of States </span><br/>Engage high level government leaders, international trade experts and delegations.<br/>Participate in dialogues relating to international trade, foreign direct investment and culture.<br/>Over 200 international businesses and 400 local businesses.<br/>Multi-cultural global trade representatives from over 35 countries.</p>
         </div>
@@ -91,16 +91,16 @@
                 </div>
               </div>
               <div class="packages__paypal"><img class="img-fluid" src="./images/landing/paypal.png" alt="Paypal"/></div>
-              <div class="banner pt-4 mt-2"><a href="#"><img class="img-fluid" src="./images/landing/land-banner.jpg" alt="" style="position: relative;"/></a></div>
+              <div class="banner pt-4 mt-2"><a href="#"><img class="img-fluid" src="./images/landing/banner3.jpg" alt="" style="position: relative;"/></a></div>
             </div>
             <div class="col-lg-2">
               <aside class="sidebar">
                 <div class="row">
                   <div class="col-md-6 col-lg-12">
-                    <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/port-banner.jpg" alt=""/></a></div>
+                    <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/banner2.jpg" alt=""/></a></div>
                   </div>
                   <div class="col-md-6 col-lg-12">
-                    <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/port-banner.jpg" alt=""/></a></div>
+                    <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/banner2.jpg" alt=""/></a></div>
                   </div>
                 </div>
               </aside>
@@ -112,13 +112,13 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/square-banner.jpg" alt=""/></a></div>
+              <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/banner1.jpg" alt=""/></a></div>
             </div>
             <div class="col-md-4">
-              <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/square-banner.jpg" alt=""/></a></div>
+              <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/banner1.jpg" alt=""/></a></div>
             </div>
             <div class="col-md-4">
-              <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/square-banner.jpg" alt=""/></a></div>
+              <div class="banner"><a href="#"><img class="img-fluid" src="./images/landing/banner7.jpg" alt=""/></a></div>
             </div>
           </div>
         </div>
@@ -169,12 +169,5 @@
     <script src="./js/jquery.min.js">   </script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
-    <script src="./js/TimeCircles.js">   </script>
-    <!--script(src="./js/jquery.countdown.js")-->
-    <script>
-      $(document).ready(function() {   
-        $("div#clock").TimeCircles();        
-      });
-    </script>
   </body>
 </html>

@@ -12,8 +12,7 @@ html(lang="en")
     //- Web Fonts
     link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,700", rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700", rel="stylesheet")
-    //- Countdown clock
-    link(rel="stylesheet", href="./css/TimeCircles.css")
+
   body
     header.header
       .header__ribbon
@@ -23,11 +22,14 @@ html(lang="en")
         
         h1.text-center.py-3.header__title
           | October  17 – 18, 2017
-        //- Countdown Clock
-        div#clock(data-date="2017-10-17 07:00:00")
+        
+        //- Streaming
+        iframe(width="560", height="340", src="http://cdn.livestream.com/embed/camersurnewstv?layout=4&amp;height=340&amp;width=560&amp;autoplay=false", style="border:0;outline:0", frameborder="0", scrolling="no")
 
-        //- Modal      
-        a(data-toggle="modal", data-target="#fitceModal").btn.btn-primary.btn-lg.landing-btn REGISTER HERE        
+        .header__actions.d-flex.justify-content-center
+          //- Modal      
+          a(href="#", data-toggle="modal", data-target="#fitceModal").btn.btn-primary.btn-lg.landing-btn.mr-2 REGISTER HERE
+          a(href="https://www.eventbrite.com/e/fitce-florida-international-trade-cultural-expo-2017-tickets-35816633515", target="_blank").btn.btn-primary.btn-lg.landing-btn KNOW MORE
         
         .header__description
           p.text-center
@@ -136,7 +138,7 @@ html(lang="en")
                 img(src="./images/landing/paypal.png", alt="Paypal", class="img-fluid")
               .banner.pt-4.mt-2
                 a(href="#")
-                  img(src="./images/landing/land-banner.jpg", alt="", class="img-fluid", style="position: relative;")
+                  img(src="./images/landing/banner3.jpg", alt="", class="img-fluid", style="position: relative;")
 
             .col-lg-2
               aside.sidebar
@@ -144,11 +146,11 @@ html(lang="en")
                   .col-md-6.col-lg-12
                     .banner
                       a(href="#")
-                        img(src="./images/landing/port-banner.jpg", alt="", class="img-fluid")
+                        img(src="./images/landing/banner2.jpg", alt="", class="img-fluid")
                   .col-md-6.col-lg-12
                     .banner
                       a(href="#")
-                        img(src="./images/landing/port-banner.jpg", alt="", class="img-fluid")                                    
+                        img(src="./images/landing/banner2.jpg", alt="", class="img-fluid")                                    
             
       //- Banners Section
       section.banners.py-3
@@ -157,15 +159,15 @@ html(lang="en")
             .col-md-4
               .banner
                 a(href="#")
-                  img(src="./images/landing/square-banner.jpg", alt="", class="img-fluid")
+                  img(src="./images/landing/banner1.jpg", alt="", class="img-fluid")
             .col-md-4
               .banner
                 a(href="#")
-                  img(src="./images/landing/square-banner.jpg", alt="", class="img-fluid")
+                  img(src="./images/landing/banner1.jpg", alt="", class="img-fluid")
             .col-md-4
               .banner
                 a(href="#")
-                  img(src="./images/landing/square-banner.jpg", alt="", class="img-fluid")
+                  img(src="./images/landing/banner7.jpg", alt="", class="img-fluid")
 
       .live.text-center
         img(src="./images/landing/live.png", alt="live", class="img-fluid")
@@ -199,9 +201,3 @@ html(lang="en")
     script(src="./js/jquery.min.js")    
     script(src="./js/popper.js")
     script(src="./js/bootstrap.js")
-    script(src="./js/TimeCircles.js")    
-    //script(src="./js/jquery.countdown.js")
-    script.
-      $(document).ready(function() {   
-        $("div#clock").TimeCircles();        
-      });
