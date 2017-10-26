@@ -80,15 +80,15 @@
   &__sociales {
     margin: 0;
     position: relative;
-    @include media(sm) {
-      margin-top: -2rem;
-    }
-    @include media(md) {
-      margin-top: -2rem;
-    }
-    @include media(lg) {
-      margin-top: -2.2rem;
-    }
+    // @include media(sm) {
+    //   margin-top: -2rem;
+    // }
+    // @include media(md) {
+    //   margin-top: -2rem;
+    // }
+    // @include media(lg) {
+    //   margin-top: -2.2rem;
+    // }
     a {
       margin: 0 0.1rem;
       // Efecto de zoom al hacer hover sobre los iconos de las redes sociales
@@ -275,7 +275,7 @@
       order: -1;
     }    
     .container {
-			border-bottom: 1px solid $gris-empresas;
+			// border-bottom: 1px solid $gris-empresas;
 			position: relative;
 		}
 		.boton-menu {

@@ -44,21 +44,15 @@
         </div>
       </div>
     </section>
-    <!-- Iconos redes sociales-->
-    <section class="header__sociales">
-      <div class="container d-flex justify-content-center justify-content-md-end"><a href="#" target="_blank"><img src="images/icono-facebook.png" alt="Icono de Facebook"/></a><a href="#" target="_blank"><img src="images/icono-instagram.png" alt="Icono de Instagram"/></a><a href="#" target="_blank"><img src="images/icono-twitter.png" alt="Icono de Twitter"/></a><a href="#" target="_blank"><img src="images/icono-linkedin.png" alt="Icono de LinkedIn"/></a><a href="#" target="_blank"><img src="images/icono-rss.png" alt="Icono de canal RSS"/></a></div>
-    </section>
     <!-- Menu de navegacion-->
     <section class="header__menu">
-      <div class="container d-flex justify-content-between align-items-center pb-3 flex-wrap">
-        <button class="boton-menu d-lg-none" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
-        <form class="header__menu__frm-busqueda">
-          <div class="inputAddOn">
-            <input class="inputAddOn-field" id="buscar" type="text" name="buscar" placeholder="BÚSQUEDA"/>
-            <button class="inputAddOn-item"><i class="fa fa-search"></i></button>
-          </div>
-        </form>
-        <nav class="collapse header__menu" id="menu-principal">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <button class="boton-menu d-lg-none order-2" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <!-- Iconos redes sociales-->
+        <section class="header__sociales order-1">
+          <div class="container d-flex justify-content-center justify-content-md-end"><a href="#" target="_blank"><img src="images/icono-facebook.png" alt="Icono de Facebook"/></a><a href="#" target="_blank"><img src="images/icono-instagram.png" alt="Icono de Instagram"/></a><a href="#" target="_blank"><img src="images/icono-twitter.png" alt="Icono de Twitter"/></a><a href="#" target="_blank"><img src="images/icono-linkedin.png" alt="Icono de LinkedIn"/></a></div>
+        </section>
+        <nav class="collapse header__menu order-3" id="menu-principal">
           <ul class="menu">
             <li class="menu-item nav-item active"><a class="nav-link" href="nosotros.html">Nosotros    </a></li>
             <li class="menu-item nav-item"><a class="nav-link" href="planes.html">Planes</a></li>
@@ -70,47 +64,53 @@
       </div>
     </section>
   </header>
-  <section class="cmsuniversidad-publicidad d-none d-sm-block">
-    <div class="container text-center"><a href="http://www.camersur.com" target="_blank"><img class="img-fluid" src="images/Banner5.png" alt="Banner publicitario"/></a></div>
-  </section>
-  <section class="resultados my-5">
-    <div class="container">
-      <h1 class="cms-titulo cms-titulo--empresas d-flex flex-column">TÉRMINO BUSCADO<span class="resultados__cantidad">6 RESULTADOS PARA LA BÚSQUEDA DE</span></h1>
-      <div class="resultado__listado">
-        <article class="resultados__item">         
-          <div class="resultados__texto">
-            <h2 class="resultados__titulo"><a href="#">TÍTULO DEL RESULTADO</a></h2>
-            <p class="resultados__descripcion">Breve texto correspondiente al resultado encontrado. Breve texto correspondiente al resultado encontrado. Breve texto correspondiente al resultado encontrado</p>
+  <div class="resultados">
+    <div class="container py-5">
+      <h1 class="cms-titulo cms-titulo--empresas">RUBRO BUSCADO en UBICACIÓN</h1>
+      <div class="row products">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="products__item"><img class="products__img" src="images/products/foto1.jpg" alt="Card image cap"/>
+            <div class="img-logo text-center"><img class="rounded-circle img-thumbnail products__logo" src="images/products/logo1.jpg" alt=""/></div>
+            <div class="products__body">         
+              <h4 class="products__title">Card title</h4>
+              <p class="products__text">Ciudad, País</p>
+            </div>
+            <div class="products__footer"><small class="text-muted">Last updated 3 mins ago</small></div>
           </div>
-          <div class="resultados__accion"><a class="resultados__boton" href="#">LEER MÁS        </a></div>
-        </article>
-        <article class="resultados__item">         
-          <div class="resultados__texto">
-            <h2 class="resultados__titulo"><a href="#">TÍTULO DEL RESULTADO</a></h2>
-            <p class="resultados__descripcion">Breve texto correspondiente al resultado encontrado</p>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="products__item"><img class="products__img" src="images/products/foto2.jpg" alt="Card image cap"/>
+            <div class="img-logo text-center"><img class="rounded-circle img-thumbnail products__logo" src="images/products/logo2.jpg" alt=""/></div>
+            <div class="products__body">         
+              <h4 class="products__title">Card title</h4>
+              <p class="products__text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="products__footer"><small class="text-muted">Last updated 3 mins ago</small></div>
           </div>
-          <div class="resultados__accion"><a class="resultados__boton" href="#">LEER MÁS        </a></div>
-        </article>
-      </div>
-      <div class="resultados__paginacion d-flex justify-content-center my-3">
-        <nav aria-label="Paginacion">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#" aria-label="Prev"><span aria-hidden="true">«</span><span class="sr-only">Prev</span></a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
-          </ul>
-        </nav>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="products__item"><img class="products__img" src="images/products/foto3.jpg" alt="Card image cap"/>
+            <div class="img-logo text-center"><img class="rounded-circle img-thumbnail products__logo" src="images/products/logo3.jpg" alt=""/></div>
+            <div class="products__body">         
+              <h4 class="products__title">Card title</h4>
+              <p class="products__text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="products__footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="products__item"><img class="products__img" src="images/products/foto4.jpg" alt="Card image cap"/>
+            <div class="img-logo text-center"><img class="rounded-circle img-thumbnail products__logo" src="images/products/logo4.jpg" alt=""/></div>
+            <div class="products__body">         
+              <h4 class="products__title">Card title</h4>
+              <p class="products__text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="products__footer"><small class="text-muted">Last updated 3 mins ago</small></div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <!-- Afiliados-->
-  <section class="afiliados pb-5">
-    <div class="container">
-      <div class="owl-carousel"><a href="#"><img class="owl-img" src="images/Logo-Esmitecp.jpg" alt="Logo Esmitecp"/></a><a href="#"><img class="owl-img" src="images/Logo-GlobalTDG.jpg" alt="Logo GlobalTDG"/></a><a href="#"><img class="owl-img" src="images/Logo-GPI.jpg" alt="Logo GPI"/></a></div>
-    </div>
-  </section>
+  </div>
   <!-- PIE DE PAGINA-->
   <footer class="footer">
     <div class="container d-sm-flex flex-wrap">
@@ -174,5 +174,4 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/app.js"></script>
 </body>

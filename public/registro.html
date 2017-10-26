@@ -44,21 +44,15 @@
         </div>
       </div>
     </section>
-    <!-- Iconos redes sociales-->
-    <section class="header__sociales">
-      <div class="container d-flex justify-content-center justify-content-md-end"><a href="#" target="_blank"><img src="images/icono-facebook.png" alt="Icono de Facebook"/></a><a href="#" target="_blank"><img src="images/icono-instagram.png" alt="Icono de Instagram"/></a><a href="#" target="_blank"><img src="images/icono-twitter.png" alt="Icono de Twitter"/></a><a href="#" target="_blank"><img src="images/icono-linkedin.png" alt="Icono de LinkedIn"/></a><a href="#" target="_blank"><img src="images/icono-rss.png" alt="Icono de canal RSS"/></a></div>
-    </section>
     <!-- Menu de navegacion-->
     <section class="header__menu">
-      <div class="container d-flex justify-content-between align-items-center pb-3 flex-wrap">
-        <button class="boton-menu d-lg-none" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
-        <form class="header__menu__frm-busqueda">
-          <div class="inputAddOn">
-            <input class="inputAddOn-field" id="buscar" type="text" name="buscar" placeholder="BÚSQUEDA"/>
-            <button class="inputAddOn-item"><i class="fa fa-search"></i></button>
-          </div>
-        </form>
-        <nav class="collapse header__menu" id="menu-principal">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <button class="boton-menu d-lg-none order-2" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <!-- Iconos redes sociales-->
+        <section class="header__sociales order-1">
+          <div class="container d-flex justify-content-center justify-content-md-end"><a href="#" target="_blank"><img src="images/icono-facebook.png" alt="Icono de Facebook"/></a><a href="#" target="_blank"><img src="images/icono-instagram.png" alt="Icono de Instagram"/></a><a href="#" target="_blank"><img src="images/icono-twitter.png" alt="Icono de Twitter"/></a><a href="#" target="_blank"><img src="images/icono-linkedin.png" alt="Icono de LinkedIn"/></a></div>
+        </section>
+        <nav class="collapse header__menu order-3" id="menu-principal">
           <ul class="menu">
             <li class="menu-item nav-item active"><a class="nav-link" href="nosotros.html">Nosotros    </a></li>
             <li class="menu-item nav-item"><a class="nav-link" href="planes.html">Planes</a></li>

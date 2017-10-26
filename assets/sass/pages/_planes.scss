@@ -266,3 +266,21 @@
 		}
 	}
 }
+
+// Boton volver
+.btn-volver {
+	color: #2c537a;
+	font-family: $montserrat-font;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	transition: all 0.5s ease;
+	&:before {
+		content: "\f0d9";
+		font-family: FontAwesome;
+		margin-right: 0.4rem;
+	}
+	&:hover {
+		font-weight: 600;
+		text-decoration: none;
+	}
+}

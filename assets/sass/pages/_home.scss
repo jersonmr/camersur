@@ -11,7 +11,7 @@
   }
 
   &__logo {
-    height: 30%;
+    height: 25%;
   }
 
   &__descripcion {
@@ -19,6 +19,7 @@
     font-family: $josefin-font;
     font-size: 1.3rem;
     margin: 1rem auto;
+    padding: 0 1rem;
   }
 
   &__boton {
@@ -320,7 +321,58 @@
     }
   }
 }
-/*.owl-stage {
-  display: flex;
-  align-items: baseline;
-}*/
+
+// Resultado de busqueda
+.busqueda {
+  background: url(../images/fondo-busqueda.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .form-inline {
+    justify-content: center;
+    @include media(sm) {
+      justify-content: flex-start;
+    }
+  }
+  .form-group {
+    margin: 0 1rem;
+  }
+  .form-control {
+    background: #fff;
+    border-radius: 0;
+    color: #8099b1;
+    font-family: $montserrat-font;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 280px;
+    @include media(sm) {
+      width: auto;
+      align-items: center;
+    }
+    @include media(md) {
+      width: 330px;
+    }
+  }
+  .cerca {
+    color: #bfcfdd;
+    font-family: $montserrat-font;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    @include media(sm) {
+      width: auto;
+    }
+  }
+  &__btn {
+    background: transparent;
+    border: 0;
+    color: #8099b1;
+    cursor: pointer;
+    font-size: 2rem;
+    outline: 0;
+    width: 100%;
+    text-align: center;
+    @include media(sm) {
+      width: auto;
+    }
+  }
+}
