@@ -284,3 +284,26 @@
 		text-decoration: none;
 	}
 }
+
+// Estilos para tooltip
+.tooltip {		
+	.tooltip-inner {
+		background-color: #1572a2;
+		color: #fff;
+		max-width: 400px;
+		padding: 0.5rem;
+	}
+	.tooltip-title {
+		border-bottom: 1px solid #67a3c2;
+		font-family: $montserrat-font;
+		font-size: 15px;	
+		font-weight: 600;
+		padding: 0.5rem 0;
+		text-transform: uppercase;
+	}
+	.tooltip-description {
+		font-family: $montserrat-font;
+		font-size: 14px;
+		padding: 0.5rem 0;
+	}	
+}

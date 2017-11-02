@@ -1,8 +1,8 @@
 //- Detectando numero de items dentro del carousel
-var numItems = $(".owl-carousel").find('.owl-img').length;
+// var numItems = $(".owl-carousel").find('.owl-img').length;
 
 //Galería de imágenes con owl-carousel
-$('.owl-carousel').owlCarousel({
+/*$('.owl-carousel').owlCarousel({
   autoplay: true,
   margin: 0,
   nav: true,
@@ -28,4 +28,11 @@ $('.owl-carousel').owlCarousel({
 $(document).ready(function()
 {
    $("#publicityModal").modal("show");
+});*/
+
+// Tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({
+    html: true
+  });
 });
