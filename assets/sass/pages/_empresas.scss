@@ -1,0 +1,51 @@
+.business {
+  &__item {
+    border: 1px solid #eaeded;
+    margin-bottom: 1rem;
+  }
+  &__text {    
+    background-color: #f3f3f3;
+    padding: 1rem 1rem 0.5rem;
+  }
+  &__title {    
+    a {
+      color: #3b658d;
+      font-family: $josefin-font;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      @include media(sm) {
+        font-size: 20px;
+      }
+    }
+  }
+  &__info {
+    background-color: #f9f9f9;
+    padding: 0.5rem 1rem;
+    @include media(sm) {
+      display: flex;      
+    }
+  }
+  &__phone {
+    color: #748a8a;
+    font-family: $montserrat-font;
+    font-size: 11px;
+    margin: 0.25rem auto;
+    @include media(sm) {
+      font-size: 15px;
+      margin: 0.25rem 1rem 0.25rem 0rem;
+    }
+    .fa {      
+      min-width: 16px;   
+      text-align: center;
+    }
+  }
+  &__empty {
+    color: #748a8a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
